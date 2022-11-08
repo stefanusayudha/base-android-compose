@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Base Architecture"
+include ':app'
+include ':core'
+include ':core:ui'
+include ':core:network'
+include ':core:common'
+include ':control'
+include ':control:provider'
+include ':control:igniter'
+
+include ':modsample'
+include ':modsample:splash'
+include ':modsample:pokemon'
+include ':modsample:todolist'

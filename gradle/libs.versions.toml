@@ -1,0 +1,249 @@
+[versions]
+## gradle
+gradle-plugin = "7.2.1"
+kotlin = "1.6.10"
+
+## core
+core = "1.8.0"
+lifecycle = "2.5.1"
+work = "2.7.1"
+
+### test
+junit = "4.13.2"
+test-ext = "1.1.3"
+test-espresso = "3.4.0"
+testng = "7.6.1"
+
+### compose
+activity-compose = "1.5.1"
+compose = "1.1.1"
+compose-material = "1.0.0-alpha15"
+compose-navigation = "2.5.1"
+#### compose tooling preview is buggy so we wil use android custom view tooling preview
+custom-view = "1.2.0-alpha01"
+custom-view-pooling-container = "1.0.0"
+
+### accompanist animation
+accompanist = "0.23.0"
+
+## arrow
+arrow = "1.0.1"
+
+## injection koin
+koin = "3.1.5"
+
+## retrofit
+retrofit = "2.9.0"
+
+## apollo
+apollo = "3.1.0"
+
+## think logic
+think-logic = "1.2.1"
+
+## armadillo
+armadillo = "1.0.0"
+
+## gson
+gson = "2.9.0"
+
+## chucker
+chucker = "3.5.2"
+
+## coil
+coil = "2.2.0"
+
+## androidx camera
+androidx-camera = "1.1.0"
+androidx-camera-view = "1.2.0-beta01"
+
+## google
+maps = "18.1.0"
+play-service = "2.7.0"
+
+[libraries]
+## core
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "core" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-work-runtime = { module = "androidx.work:work-runtime", version.ref = "work" }
+
+### test
+junit = { module = "junit:junit", version.ref = "junit" }
+testng = { module = "org.testng:testng", version.ref = "testng" }
+
+### android test
+androidx-test-ext = { module = "androidx.test.ext:junit", version.ref = "test-ext" }
+androidx-test-espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "test-espresso" }
+
+### compose
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-material = { module = "androidx.compose.material3:material3", version.ref = "compose-material" }
+compose-navigation = { module = "androidx.navigation:navigation-compose", version.ref = "compose-navigation" }
+
+#### debug
+custom-view-debug = { module = "androidx.customview:customview", version.ref = "custom-view" }
+custom-view-debug-pooling-container = { module = "androidx.customview:customview-poolingcontainer", version.ref = "custom-view-pooling-container" }
+compose-debug-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-debug-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose" }
+
+#### android test
+compose-android-test-junit = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose" }
+
+## accompanist animation
+accompanist-pager = { module = "com.google.accompanist:accompanist-pager", version.ref = "accompanist" }
+accompanist-pager-indicators = { module = "com.google.accompanist:accompanist-pager-indicators", version.ref = "accompanist" }
+accompanist-animation-animation = { module = "com.google.accompanist:accompanist-navigation-animation", version.ref = "accompanist" }
+accompanist-system-ui-controller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanist" }
+
+## arrow
+arrow-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow" }
+arrow-core-retrofit = { module = "io.arrow-kt:arrow-core-retrofit", version.ref = "arrow" }
+
+## injection koin
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+koin-android-work-manager = { module = "io.insert-koin:koin-androidx-workmanager", version.ref = "koin" }
+koin-android-navigation = { module = "io.insert-koin:koin-androidx-navigation", version.ref = "koin" }
+koin-android-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
+
+## retrofit
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+
+## apollo
+apollo = { module = "com.apollographql.apollo3:apollo-runtime", version.ref = "apollo" }
+
+## think logic
+think-logic-builder = { module = "com.thinkinglogic.builder:kotlin-builder-annotation", version.ref = "think-logic" }
+
+## armadillo
+armadillo = { module = "at.favre.lib:armadillo", version.ref = "armadillo" }
+
+## gson
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+
+## chucker
+chucker-debug = { module = "com.github.chuckerteam.chucker:library", version.ref = "chucker" }
+chucker-release = { module = "com.github.chuckerteam.chucker:library-no-op", version.ref = "chucker" }
+
+## coil
+coil = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+
+## camera
+androidx-camera = { module = "androidx.camera:camera-camera2", version.ref = "androidx-camera" }
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "androidx-camera" }
+androidx-camera-view = { module = "androidx.camera:camera-view", version.ref = "androidx-camera-view" }
+
+## google
+play-service = { module = "com.google.android.gms:play-services-maps", version.ref = "play-service" }
+
+### maps
+maps = { module = "com.google.maps.android:maps-compose", version.ref = "maps" }
+
+[bundles]
+core = [
+    "androidx.core.ktx",
+    "androidx.lifecycle.runtime.ktx",
+    "androidx.work.runtime"
+]
+
+core-test = [
+    "junit",
+    "testng"
+]
+
+core-android-test = [
+    "androidx.test.ext",
+    "androidx.test.espresso",
+]
+
+kotlin-arrow = [
+    "arrow.core",
+    "arrow.core.retrofit"
+]
+
+compose = [
+    "activity.compose",
+    "compose.ui",
+    "compose.tooling.preview",
+    "compose.material",
+    "compose.navigation"
+]
+
+compose-test = [
+
+]
+
+compose-android-test = [
+    "compose.android.test.junit"
+]
+
+compose-debug = [
+    "custom.view.debug",
+    "custom.view.debug.pooling.container",
+    "compose.debug.ui.tooling",
+    "compose.debug.ui.test.manifest"
+]
+
+accompanist = [
+    "accompanist.pager",
+    "accompanist.pager.indicators",
+    "accompanist.animation.animation",
+    "accompanist.system.ui.controller"
+]
+
+koin = [
+    "koin.core",
+    "koin.android",
+    "koin.android.work.manager",
+    "koin.android.navigation",
+    "koin.android.compose"
+]
+
+retrofit = [
+    "retrofit",
+    "retrofit.converter.gson",
+]
+
+apollo = [
+    "apollo"
+]
+
+builder-kapt = [
+    "think.logic.builder"
+]
+
+preference = [
+    "armadillo"
+]
+
+serialization = [
+    "gson"
+]
+
+chucker-debug = [
+    "chucker.debug"
+]
+
+chucker-release = [
+    "chucker.release"
+]
+
+image-loader = [
+    "coil"
+]
+
+androidx-camera = [
+    "androidx.camera",
+    "androidx.camera.lifecycle",
+    "androidx.camera.view"
+]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "gradle-plugin" }
+android-library = { id = "com.android.library", version.ref = "gradle-plugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+apollo-graph-ql = { id= "com.apollographql.apollo3", version.ref = "apollo" }

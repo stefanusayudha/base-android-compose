@@ -1,0 +1,12 @@
+query GetPokemonList(
+    $limit: Int!,
+    $offset: Int!
+) {
+    pokemon_v2_pokemon(
+        limit: $limit,
+        offset: $offset
+    ) {
+        id
+        name
+    }
+}
