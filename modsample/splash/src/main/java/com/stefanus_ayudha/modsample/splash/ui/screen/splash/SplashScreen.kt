@@ -36,30 +36,13 @@ fun SplashScreen(
             Alignment.BottomCenter
         )
     ) {
-        Button(
-            onClick = {
-                portal?.goToTodoList(
-                    TodoSpace.Payload()
-                )
-            },
-            modifier = Modifier.fillMaxWidth()
+
+        ArrowButton(
+            text = "Go to Todo List"
         ) {
-            Row(
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Text(text = "Go to Todo List")
-                Spacer(
-                    modifier = Modifier
-                        .width(8.toDp)
-                )
-                Image(
-                    imageVector = Icons.Rounded.ArrowForward,
-                    contentDescription = "Navigation to Todo List",
-                    colorFilter = ColorFilter.tint(
-                        color = Color.White
-                    )
-                )
-            }
+            portal?.goToTodoList(
+                TodoSpace.Payload()
+            )
         }
 
         Spacer(
@@ -67,35 +50,43 @@ fun SplashScreen(
                 .height(16.toDp)
         )
 
-        Button(
-            onClick = {
-                portal?.goToPokemonHome(
-                    PokemonSpace.Payload()
-                )
-            },
-            modifier = Modifier.fillMaxWidth()
+        ArrowButton(
+            text = "Go to Pokemon Home"
         ) {
-            Row(
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Text(text = "Go to Pokemon Home")
-                Spacer(
-                    modifier = Modifier
-                        .width(8.toDp)
-                )
-                Image(
-                    imageVector = Icons.Rounded.ArrowForward,
-                    contentDescription = "Navigation to Home",
-                    colorFilter = ColorFilter.tint(
-                        color = Color.White
-                    )
-                )
-            }
+            portal?.goToPokemonHome(
+                PokemonSpace.Payload()
+            )
         }
 
         Spacer(
             modifier = Modifier
                 .height(16.toDp)
+        )
+    }
+}
+
+@Composable
+fun ArrowButton(
+    text: String,
+    onClick: () -> Unit
+) = Button(
+    onClick = onClick,
+    modifier = Modifier.fillMaxWidth()
+) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Text(text = text)
+        Spacer(
+            modifier = Modifier
+                .width(8.toDp)
+        )
+        Image(
+            imageVector = Icons.Rounded.ArrowForward,
+            contentDescription = "Navigate",
+            colorFilter = ColorFilter.tint(
+                color = Color.White
+            )
         )
     }
 }
