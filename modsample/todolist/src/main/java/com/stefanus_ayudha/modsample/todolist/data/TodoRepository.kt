@@ -1,21 +1,21 @@
 package com.stefanus_ayudha.modsample.todolist.data
 
-import com.stefanus_ayudha.modsample.todolist.data.model.Todo
-import com.stefanus_ayudha.modsample.todolist.data.payload.GetTodoByIdPayload
-import com.stefanus_ayudha.modsample.todolist.data.payload.GetTodoListPayload
+import com.stefanus_ayudha.modsample.todolist.data.model.TodoMdl
+import com.stefanus_ayudha.modsample.todolist.data.payload.GetTodoByIdPld
+import com.stefanus_ayudha.modsample.todolist.data.payload.GetTodoListPld
 import com.stefanus_ayudha.modsample.todolist.data.src.web.todoListWebApi
 
 suspend fun getTodoList(
-    payload: GetTodoListPayload
-): List<Todo> {
+    payload: GetTodoListPld
+): List<TodoMdl> {
     return todoListWebApi.getTodoList(
         payload.getQueryMap()
     )
 }
 
 suspend fun getTodoById(
-    payload: GetTodoByIdPayload
-): Todo {
+    payload: GetTodoByIdPld
+): TodoMdl {
     return todoListWebApi.getTodoById(
         payload.id
     )
