@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.tooling.preview.Preview
+import com.stefanus_ayudha.control.provider.sample.space.MMDExampleSpace
 import com.stefanus_ayudha.control.provider.sample.space.PokemonSpace
 import com.stefanus_ayudha.control.provider.sample.space.TodoSpace
 import com.stefanus_ayudha.core.ui.ui.theme.ContentThemeWrapper
@@ -55,6 +56,19 @@ fun SplashScreen(
         ) {
             portal?.goToPokemonHome(
                 PokemonSpace.Payload()
+            )
+        }
+
+        Spacer(
+            modifier = Modifier
+                .height(16.toDp)
+        )
+
+        ArrowButton(
+            text = "Go to MMD Example"
+        ) {
+            portal?.goToMMDExample(
+                MMDExampleSpace.Payload()
             )
         }
 

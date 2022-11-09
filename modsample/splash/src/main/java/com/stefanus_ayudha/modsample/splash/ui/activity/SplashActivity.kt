@@ -2,6 +2,7 @@ package com.stefanus_ayudha.modsample.splash.ui.activity
 
 import android.annotation.SuppressLint
 import androidx.compose.runtime.Composable
+import com.stefanus_ayudha.control.provider.sample.space.MMDExampleSpace
 import com.stefanus_ayudha.control.provider.sample.space.PokemonSpace
 import com.stefanus_ayudha.control.provider.sample.space.TodoSpace
 import com.stefanus_ayudha.core.common.domain.model.NOTHING
@@ -26,6 +27,13 @@ class SplashActivity : BaseActivity(), SplashActivityUseCase {
     override val pokemonLauncher = createLauncher(pokemonSpace) {
         if (it != null)
             pokemonLauncherResult?.invoke(it)
+    }
+
+    override val mmdExampleSpace: MMDExampleSpace by inject()
+    override var mmdExampleLauncherResult: ((NOTHING) -> Unit)? = null
+    override val mmdExampleLauncher = createLauncher(mmdExampleSpace) {
+        if (it != null)
+            mmdExampleLauncherResult?.invoke(it)
     }
 
     override val content = @Composable {
