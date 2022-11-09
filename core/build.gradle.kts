@@ -1,4 +1,6 @@
 import com.android.build.gradle.BaseExtension
+import java.io.FileInputStream
+import org.jetbrains.kotlin.konan.properties.Properties
 
 plugins {
     id("java-platform")
@@ -6,6 +8,14 @@ plugins {
 
 group = "android"
 version = "1.0.0"
+
+// Load keystore
+val keystorePropertiesFile = file("${rootDir.absolutePath}/keystore.properties");
+val keystoreProperties = Properties().apply {
+    kotlin.runCatching {
+        load(FileInputStream(keystorePropertiesFile))
+    }
+}
 
 subprojects {
     apply(plugin = "com.android.library")
@@ -35,6 +45,14 @@ subprojects {
                         "proguard-rules.pro"
                     )
                 }
+                create("staging") {
+                    isMinifyEnabled = true
+                    isDebuggable = true
+                    proguardFiles(
+                        getDefaultProguardFile("proguard-android-optimize.txt"),
+                        "proguard-rules.pro"
+                    )
+                }
                 getByName("release") {
                     isMinifyEnabled = true
                     isDebuggable = false
@@ -42,6 +60,22 @@ subprojects {
                         getDefaultProguardFile("proguard-android-optimize.txt"),
                         "proguard-rules.pro"
                     )
+                }
+            }
+            signingConfigs {
+                create("release") {
+                    storeFile = file(keystoreProperties["storeFile"] ?: "path/to/keystore")
+                    storePassword = keystoreProperties ["storePassword"] as String? ?:""
+                    keyAlias = keystoreProperties ["keyAlias"] as String? ?: ""
+                    keyPassword = keystoreProperties ["keyPassword"] as String? ?: ""
+                }
+            }
+            buildTypes {
+                getByName("staging") {
+                    signingConfig = signingConfigs.getByName("release")
+                }
+                getByName("release") {
+                    signingConfig = signingConfigs.getByName("release")
                 }
             }
             compileOptions {
