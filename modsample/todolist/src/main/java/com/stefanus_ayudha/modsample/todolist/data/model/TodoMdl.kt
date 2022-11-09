@@ -2,7 +2,7 @@ package com.stefanus_ayudha.modsample.todolist.data.model
 
 import com.google.gson.annotations.SerializedName
 
-data class Todo(
+data class TodoMdl(
     @field:SerializedName("id")
     val id: Int? = null,
 
@@ -17,7 +17,7 @@ data class Todo(
 ) {
     companion object {
         val MOCK_LIST = (1..10).map {
-            Todo(
+            TodoMdl(
                 id = it,
                 completed = it % 3 == 0,
                 title = "Todo Number $it",

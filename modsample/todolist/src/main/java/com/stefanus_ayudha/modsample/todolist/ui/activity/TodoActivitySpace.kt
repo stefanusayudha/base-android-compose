@@ -6,10 +6,10 @@ import com.stefanus_ayudha.core.common.domain.model.NOTHING
 import com.stefanus_ayudha.core.common.util.launcher.createLauncher
 
 class TodoActivitySpace() : TodoSpace {
-    override fun getLauncher(): ActivityResultContract<TodoSpace.Payload, NOTHING?> {
+    override fun getLauncher(): ActivityResultContract<TodoSpace.Pld, TodoSpace.Result?> {
         return createLauncher(
             activity = TodoActivity::class.java,
-            outputType = NOTHING::class.java
+            outputType = TodoSpace.Result::class.java
         )
     }
 }
