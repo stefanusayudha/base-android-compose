@@ -15,6 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.stefanus_ayudha.control.provider.sample.mmdexample.MMDExampleSpace
 import com.stefanus_ayudha.control.provider.sample.pokemon.PokemonSpace
 import com.stefanus_ayudha.control.provider.sample.todolist.TodoSpace
+import com.stefanus_ayudha.core.common.util.logDebug
 import com.stefanus_ayudha.core.ui.ui.theme.ContentThemeWrapper
 import com.stefanus_ayudha.core.ui.util.toDp
 import com.stefanus_ayudha.modsample.splash.ui.navigation.SplashPortal
@@ -42,8 +43,10 @@ fun SplashScreen(
             text = "Go to Todo List"
         ) {
             portal?.goToTodoList(
-                TodoSpace.Payload()
-            )
+                TodoSpace.Pld()
+            ) {
+                logDebug("Back from Todo List trip $it")
+            }
         }
 
         Spacer(
@@ -55,8 +58,10 @@ fun SplashScreen(
             text = "Go to Pokemon Home"
         ) {
             portal?.goToPokemonHome(
-                PokemonSpace.Payload()
-            )
+                PokemonSpace.Pld()
+            ) {
+                logDebug("Back from Pokemon trip $it")
+            }
         }
 
         Spacer(
@@ -68,7 +73,7 @@ fun SplashScreen(
             text = "Go to MMD Example"
         ) {
             portal?.goToMMDExample(
-                MMDExampleSpace.Payload()
+                MMDExampleSpace.Pld()
             )
         }
 
