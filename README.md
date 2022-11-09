@@ -85,7 +85,7 @@ saya, Tidak.
 
 Sebagai front-end developer, saya tidak pernah menemukan kemungkinan yang begitu rumit.
 
-Aplikasi front-end hanya terdiri dari 2 hal yakni **UI** dan **Data**. Seberapa rumitkah itu.
+Aplikasi front-end hanya terdiri dari 2 hal yakni **UI** dan **Data**.
 
 ## UI
 
@@ -108,11 +108,11 @@ kenapa kita tidak membuatnya menjadi sederhana?
 
 Dalam contoh dalam project ini. Data module tidak perlu mematuhi SOLID principle. Akan tetapi kita
 akan memaksimalkan **Functional Pattern** sebisa mungkin. Saya masih menemukan beberapa kesulitan
-dalam hal support teknologi, dan dokumentasi, akan tetapi, lihat seberapa sederhana itu.
+dalam hal support teknologi, dan dokumentasi, akan tetapi prinsib ini sangatlah sederhana sehingga kita bisa mengabaikannya untuk sementara ini.
 
 1. Data module, tidak boleh memiliki state, dia hanya peduli dengan apa data yang diminta, dan
    memberikannya atau memberikan Error / Exception / Either.left apapun yang kalian gunakan.
 2. Data module hanya memprovide data dari Source, memberikan data atau Error jika data tidak
    ditemukan. Sedangkan bagaimana source berperilaku bukanlah konsern dari Data module.
-3. Repository API -> Source. Tidak rumit bukan. Dengan monoid chain hal ini dapat menjadi sangat
+3. Repository API -> Source. Dengan monoid chain hal ini dapat menjadi sangat
    sederhana, hanya memerlukan 2 step saja.
