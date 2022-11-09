@@ -1,4 +1,4 @@
-package com.stefanus_ayudha.control.provider.sample.space
+package com.stefanus_ayudha.control.provider.sample.pokemon
 
 import com.google.gson.annotations.SerializedName
 import com.stefanus_ayudha.core.common.domain.model.NOTHING

@@ -34,6 +34,9 @@
         <activity
             android:name="com.stefanus_ayudha.modsample.pokemon.ui.activity.PokemonActivity"
             android:exported="true" />
+        <activity
+            android:name="com.stefanus_ayudha.modsample.mmdexample.ui.activity.MMDExampleActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
