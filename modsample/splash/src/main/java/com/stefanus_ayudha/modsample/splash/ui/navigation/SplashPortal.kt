@@ -1,9 +1,9 @@
 package com.stefanus_ayudha.modsample.splash.ui.navigation
 
 import androidx.activity.result.ActivityResultLauncher
-import com.stefanus_ayudha.control.provider.sample.space.MMDExampleSpace
-import com.stefanus_ayudha.control.provider.sample.space.PokemonSpace
-import com.stefanus_ayudha.control.provider.sample.space.TodoSpace
+import com.stefanus_ayudha.control.provider.sample.mmdexample.MMDExampleSpace
+import com.stefanus_ayudha.control.provider.sample.pokemon.PokemonSpace
+import com.stefanus_ayudha.control.provider.sample.todolist.TodoSpace
 import com.stefanus_ayudha.core.common.domain.model.NOTHING
 
 interface SplashPortal {

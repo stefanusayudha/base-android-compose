@@ -12,9 +12,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.tooling.preview.Preview
-import com.stefanus_ayudha.control.provider.sample.space.MMDExampleSpace
-import com.stefanus_ayudha.control.provider.sample.space.PokemonSpace
-import com.stefanus_ayudha.control.provider.sample.space.TodoSpace
+import com.stefanus_ayudha.control.provider.sample.mmdexample.MMDExampleSpace
+import com.stefanus_ayudha.control.provider.sample.pokemon.PokemonSpace
+import com.stefanus_ayudha.control.provider.sample.todolist.TodoSpace
 import com.stefanus_ayudha.core.ui.ui.theme.ContentThemeWrapper
 import com.stefanus_ayudha.core.ui.util.toDp
 import com.stefanus_ayudha.modsample.splash.ui.navigation.SplashPortal
