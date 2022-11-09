@@ -96,5 +96,6 @@ dependencies {
         api(project(":modsample:pokemon"))
         api(project(":modsample:splash"))
         api(project(":modsample:todolist"))
+        api(project(":modsample:mmdexample"))
     }
 }
