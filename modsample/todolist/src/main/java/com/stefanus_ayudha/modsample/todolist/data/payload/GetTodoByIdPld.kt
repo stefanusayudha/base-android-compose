@@ -2,7 +2,7 @@ package com.stefanus_ayudha.modsample.todolist.data.payload
 
 import com.stefanus_ayudha.core.common.domain.payload.Payload
 
-data class GetTodoByIdPayload(
+data class GetTodoByIdPld(
     val id: String = ""
 ) : Payload {
     override fun getQueryMap() = hashMapOf<String, String>()

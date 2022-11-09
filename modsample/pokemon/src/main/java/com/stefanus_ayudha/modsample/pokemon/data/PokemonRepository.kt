@@ -3,12 +3,12 @@ package com.stefanus_ayudha.modsample.pokemon.data
 import com.stefanus_ayudha.core.network.GetPokemonByIdQuery
 import com.stefanus_ayudha.core.network.GetPokemonListQuery
 import com.stefanus_ayudha.modsample.pokemon.data.payload.GetPokemonByIdPld
-import com.stefanus_ayudha.modsample.pokemon.data.payload.GetPokemonListPayload
+import com.stefanus_ayudha.modsample.pokemon.data.payload.GetPokemonListPld
 import com.stefanus_ayudha.modsample.pokemon.data.src.web.getPokemonByIdWeb
 import com.stefanus_ayudha.modsample.pokemon.data.src.web.getPokemonListWeb
 
 suspend fun getPokemonList(
-    payload: GetPokemonListPayload
+    payload: GetPokemonListPld
 ): GetPokemonListQuery.Data =
     getPokemonListWeb(
         payload
