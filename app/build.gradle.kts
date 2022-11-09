@@ -1,6 +1,17 @@
+import java.io.FileInputStream
+import org.jetbrains.kotlin.konan.properties.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+}
+
+// Load keystore
+val keystorePropertiesFile = file("${rootDir.absolutePath}/keystore.properties");
+val keystoreProperties = Properties().apply {
+    kotlin.runCatching {
+        load(FileInputStream(keystorePropertiesFile))
+    }
 }
 
 android {
@@ -18,10 +29,35 @@ android {
             useSupportLibrary = true
         }
     }
-
+    signingConfigs {
+        create("release") {
+            storeFile = file(keystoreProperties["storeFile"] ?: "path/to/keystore")
+            storePassword = keystoreProperties["storePassword"] as String? ?: ""
+            keyAlias = keystoreProperties["keyAlias"] as String? ?: ""
+            keyPassword = keystoreProperties["keyPassword"] as String? ?: ""
+        }
+    }
     buildTypes {
+        debug {
+            isMinifyEnabled = false
+            applicationIdSuffix = ".debug"
+            // no need to define proguard
+        }
+        create("staging") {
+            isMinifyEnabled = true
+            isDebuggable = true
+            applicationIdSuffix = ".staging"
+            signingConfig = signingConfigs.getByName("release")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+
         release {
             isMinifyEnabled = true
+            isDebuggable = false
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"

@@ -47,9 +47,8 @@ dependencies {
     // GSON
     api(libs.bundles.serialization)
 
-    // DEBUG
-    debugApi(libs.bundles.chucker.debug)
-    releaseApi(libs.bundles.chucker.release)
+    // CHUCKER
+    api(libs.bundles.chucker.debug)
 
     // IMAGE LOADER
     api(libs.bundles.image.loader)
