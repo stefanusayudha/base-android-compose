@@ -1,4 +1,4 @@
-# Welcome to My Architecture Design!
+# Welcome to My Codebase Design!
 
 Untuk mengukur seberapa baik sebuah arsitektur, kita membutuhkan base line (Standar minimum) dan sebuah alat untuk mengukur. 
 Base tersebut adalah **Alur Dependensi dan Alur Kerja** dan alat ukur tersebut adalah **Prinsib-prinsib pembuatan software**.
@@ -62,7 +62,7 @@ Seluruh module (yang masuk dalam kategori runtime module) hanya depend ke 1 Modu
 Module. Sementara Provider Module depend ke **Core Module**. Dalam arsitektur ini **Core Module**
 adalah sebuah pengecualian, dikarenakan Core Module memiliki sangat banyak komponent dan kebanyakan
 berukuran sangat kecil. Oleh Karena itu, akan jauh lebih mudah jika semua module yang membutuhkan
-core **"Straight Depend" ke Module Core**, dan semua module tetap harus **mengakses Core Module
+core **"Straight Depend" ke Core Module**, dan semua module tetap harus **mengakses Core Module
 melalui Provider**.
 
 ## Igniter
