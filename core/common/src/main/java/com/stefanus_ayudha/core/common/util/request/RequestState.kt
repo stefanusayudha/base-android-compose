@@ -1,3 +1,6 @@
+/*
+ * Copyright (c) 2022. Stefanus Ayudha.
+ */
 package com.stefanus_ayudha.core.common.util.request
 
 import com.stefanus_ayudha.core.common.domain.model.Error

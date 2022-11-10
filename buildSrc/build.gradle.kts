@@ -7,7 +7,7 @@ gradlePlugin {
     plugins {
         register("common-binary-plugin") {
             id = "common-binary-plugin"
-            implementationClass = "com.ckundr.plugins.CommonBinaryPlugin"
+            implementationClass = "com.stefanus_ayudha.plugins.CommonBinaryPlugin"
         }
     }
 }
@@ -41,12 +41,8 @@ repositories {
  **/
 
 dependencies {
-    implementation(
-        listOf(
-            "com.android.tools.build:gradle:7.2.2",
-            "com.android.tools.build:gradle-api:7.2.2",
-            "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10",
-            "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
-        )
-    )
+    implementation("com.android.tools.build:gradle:7.2.2" )
+    implementation("com.android.tools.build:gradle-api:7.2.2")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")
 }

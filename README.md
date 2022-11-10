@@ -1,3 +1,7 @@
+Sebelumnya saya ingin mengucapkan untuk para kontributor yang sangat luar biasa [Kontributor](CREDITS.md).
+
+ - **Joseph Sanjaya** (meet: [joseph](https://github.com/JosephSanjaya)). Original designer dari Konsep dan Terminologi Navigasi yang luarbiasa dalam codebase ini.
+
 # Welcome to My Codebase Design!
 
 Untuk mengukur seberapa baik sebuah arsitektur, kita membutuhkan base line (Standar minimum) dan sebuah alat untuk mengukur.   
@@ -76,7 +80,7 @@ Application class.
 
 ## Overview arsitektur
 
-Anda bisa melihat overview arsitektur pada file arsitektur-overview.pdf
+Anda bisa melihat overview arsitektur pada file [arsitektur-overview.pdf](arsitektur-overview.pdf)
 
 # Internal Module Arsitektur
 

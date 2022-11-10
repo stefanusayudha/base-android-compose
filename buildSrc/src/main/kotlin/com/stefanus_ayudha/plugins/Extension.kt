@@ -1,73 +1,18 @@
-package com.ckundr.plugins
+/*
+ * Copyright (c) 2022. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+ * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+ * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+ * Vestibulum commodo. Ut rhoncus gravida arcu.
+ */
+
+package com.stefanus_ayudha.plugins
 
 import com.android.build.gradle.BaseExtension
 import org.gradle.api.JavaVersion
 import org.gradle.api.Project
-import org.gradle.api.Transformer
-import org.gradle.api.artifacts.ExternalModuleDependencyBundle
-import org.gradle.api.provider.Provider
 import java.io.FileInputStream
 import java.util.*
-import java.util.function.BiFunction
-
-fun testBundle() : Provider<ExternalModuleDependencyBundle> {
-    return object : Provider<ExternalModuleDependencyBundle>{
-        override fun get(): ExternalModuleDependencyBundle {
-            TODO("Not yet implemented")
-        }
-
-        override fun getOrNull(): ExternalModuleDependencyBundle? {
-            TODO("Not yet implemented")
-        }
-
-        override fun getOrElse(defaultValue: ExternalModuleDependencyBundle): ExternalModuleDependencyBundle {
-            TODO("Not yet implemented")
-        }
-
-        override fun <S : Any?> map(transformer: Transformer<out S, in ExternalModuleDependencyBundle>): Provider<S> {
-            TODO("Not yet implemented")
-        }
-
-        override fun <S : Any?> flatMap(transformer: Transformer<out Provider<out S>, in ExternalModuleDependencyBundle>): Provider<S> {
-            TODO("Not yet implemented")
-        }
-
-        override fun isPresent(): Boolean {
-            TODO("Not yet implemented")
-        }
-
-        override fun orElse(value: ExternalModuleDependencyBundle): Provider<ExternalModuleDependencyBundle> {
-            TODO("Not yet implemented")
-        }
-
-        override fun orElse(p0: Provider<out ExternalModuleDependencyBundle>): Provider<ExternalModuleDependencyBundle> {
-            TODO("Not yet implemented")
-        }
-
-        override fun forUseAtConfigurationTime(): Provider<ExternalModuleDependencyBundle> {
-            TODO("Not yet implemented")
-        }
-
-        override fun <B : Any?, R : Any?> zip(
-            p0: Provider<B>,
-            p1: BiFunction<ExternalModuleDependencyBundle, B, R>
-        ): Provider<R> {
-            TODO("Not yet implemented")
-        }
-    }
-}
-//fun DependencyHandlerScope.kotlinProject() {
-//    "implementation"(Libraries.kotlinStdLib)
-//}
-//
-//fun DependencyHandlerScope.unitTestDependencies() {
-//    "testImplementation"(Libraries.junit)
-//}
-//
-//fun DependencyHandlerScope.androidTestDependencies() {
-//    "androidTestImplementation"(Libraries.testRunner)
-//    "androidTestImplementation"(Libraries.espressoCore)
-//}
 
 val Project.android: BaseExtension
     get() = extensions.findByName("android") as? BaseExtension
