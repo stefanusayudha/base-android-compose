@@ -98,7 +98,7 @@ Pendekatan **Pure Function**;
 3. Pendekatan ini mengharuskan sebuah input yang sama menghasilkan output yang sama. Artinya jika kita berekspektasi untuk mendapatkan output yang berbeda, maka kita harus memberikan input yang berbeda. Contoh kasus jika terjadi perubahan pada bisnis prosess; Sederhananya, setiap bisnis proses yang berbeda harus memiliki *Payload* yang berbeda juga. Dengan demikian, kita tidak perlu mengkhawatirkan perubahan pada bisnis prosess, atau lebih tepatnya kita tidak memiliki konsep perubahan bisnis proses. Akan tetapi kita menggunakan konsep scalling bisnis proses dengan menghadirkan *Pure Function* baru dan *Payload* baru untuk setiap bisnis proses.
 
 # Contributing
-Saya akan sangat senang untuk menerima kontribusi dari siappun, dan saya mebuka proyek ini untuk kontribusi. Akan tetapi untuk sekarang saya masih belum sempat menyiapkan prosedur kontribusi. Oleh karena itu, jika anda berminat untuk melakukan kontribusi, anda dapat menghubungi saya secara langsung. Anda dapat menemukan saya section author di bawah.
+Saya akan sangat senang untuk menerima kontribusi dari siappun, dan saya mebuka proyek ini untuk kontribusi. Akan tetapi untuk sekarang saya masih belum sempat menyiapkan prosedur kontribusi. Oleh karena itu, jika anda berminat untuk melakukan kontribusi, anda dapat menghubungi saya secara langsung. Anda dapat menemukan saya pada section author di bawah.
 
 Anda dapat melihat perkembangan proyek ini [disini](https://github.com/users/stefanusayudha/projects/2).
 
