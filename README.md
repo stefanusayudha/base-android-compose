@@ -11,7 +11,7 @@ Untuk mengukur seberapa baik sebuah arsitektur, kita membutuhkan base line (Stan
 
 Disini kita akan "**Back to Basic**" dengan konsern sepenuhnya pada **Flow dependensi** dan **Flow runtime**.
 
-Saya memiliki prinsib sederhana; "Jika rumit berarti salah". Jadi kita akan membuatnya sedikit lebih mudah dengan menghadirkan sebuah module baru pada gradle project ,yaitu : **Provider** dan **Igniter**.
+Saya memiliki prinsib sederhana; "Jika sulit berarti salah". Jadi kita akan membuatnya sedikit lebih mudah dengan menghadirkan sebuah module baru pada gradle project ,yaitu : **Provider** dan **Igniter**.
 
 Ide utama dari proyek ini adalah:
 1. Menghilangkan Horizontal dependency sepenuhnya, dengan memunculkan module baru yakni **Provider** dan **Igniter**.
