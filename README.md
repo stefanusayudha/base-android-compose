@@ -1,3 +1,4 @@
+
 Sebelumnya saya ingin mengucapkan untuk para kontributor yang sangat luar biasa [Kontributor](CREDITS.md).
 
  - **Joseph Sanjaya** (meet: [joseph](https://github.com/JosephSanjaya)). Original designer dari Konsep dan Terminologi Navigasi yang luarbiasa dalam codebase ini.
@@ -17,6 +18,9 @@ Ide utama dari proyek ini adalah:
 1. Menghilangkan Horizontal dependency sepenuhnya, dengan memunculkan module baru yakni **Provider** dan **Igniter**.
 2. Menghilangkan state dari data layer, dengan memaksimalkan functional pattern pada data layer.
 3. Me-lokalisasi side effect. Kita harus membatasi module yang bisa melakukan side effect dan sebisa mungkin menghilangkannya.
+
+# FREE TO USE
+Anda dapat menggunakan codebase ini sebagai basis proyek anda dan memodifikasinya untuk keperluan proyek anda. Saya juga akan sangat senang untuk menerima masukan dan kontribusi dari anda.
 
 # Project Arsitektur
 
@@ -136,7 +140,10 @@ Pendekatan **Pure Function** berarti;
 >4. Fungsi hanya bertugas untuk merubah sebuah input menjadi sebuah output baru. Contohnya merubah *Integer* menjadi *String*, atau merubah *Payload* menjadi *Data*  atau memberikan Error / Exception / Either.Left jika proses tidak berhasil.
 3. Pendekatan ini mengharuskan sebuah input yang sama menghasilkan output yang sama. Artinya jika kita berekspektasi untuk mendapatkan output yang berbeda, maka kita harus memberikan input yang berbeda. Contoh kasus jika terjadi perubahan pada bisnis prosess; Sederhananya, setiap bisnis proses yang berbeda harus memiliki *Payload* yang berbeda juga. Dengan demikian, kita tidak perlu mengkhawatirkan perubahan pada bisnis prosess, atau lebih tepatnya kita tidak memiliki konsep perubahan bisnis proses. Akan tetapi kita menggunakan konsep scalling bisnis proses dengan menghadirkan *Pure Function* baru dan *Payload* baru untuk setiap bisnis proses.
 
-## Meet the Author
+# Contributing
+Saya akan sangat senang untuk menerima kontribusi dari siappun, dan saya mebuka proyek ini untuk kontribusi. Akan tetapi untuk sekarang saya masih belum sempat menyiapkan prosedur kontribusi. Oleh karena itu, jika anda berminat untuk melakukan kontribusi, anda dapat menghubungi saya secara langsung. Anda dapat menemukan saya section author di bawah.
+
+# Meet the Author
 Saya steve, programmer for fun. Anda dapat menemukan saya pada akun berikut:
 
 1. [Instagram @stefanus_ayudha](https://www.instagram.com/stefanus_ayudha/)
