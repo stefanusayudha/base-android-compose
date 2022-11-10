@@ -2,6 +2,9 @@
 Sebelumnya saya ingin mengucapkan terimakasih dan apresiasi untuk para kontributor yang sangat luar biasa [Kontributor](CREDITS.md).
 
  - **Joseph Sanjaya** (meet: [joseph](https://github.com/JosephSanjaya)). Original desing dari Konsep dan Terminologi Navigasi yang luarbiasa dalam codebase ini.
+ 
+# FREE TO USE
+Anda dapat menggunakan codebase ini sebagai basis proyek anda dan memodifikasinya untuk keperluan proyek anda. Saya membuat codebase ini dengan harapan dapat membantu siappun untuk memulai proyek skala besar. Dan saya berterimakasih untuk siapapun yang menggunakan codebase ini, dikarenakan deangan menggunakan codebase ini, anda turut berkontribusi untuk melakukan pengujian dalam codebase ini. Saya berharap dengan banyaknya penguna dan masukan akan bisa menghasilkan masukan untuk mengembangkan codebase ini. Saya juga akan sangat senang untuk menerima masukan dan kontribusi dari anda.
 
 # Welcome to My Codebase Design!
 Untuk mengukur seberapa baik sebuah arsitektur, kita membutuhkan base line (Standar minimum) dan sebuah alat untuk mengukur. Base tersebut adalah **Alur Dependensi dan Alur Kerja** dan alat ukur tersebut adalah **Prinsib-prinsib pembuatan software**. Arsitektur software adalah tentang Flow Dependensi dan Flow Runtime. Hal-hal selain itu adalah preferensi.
@@ -14,9 +17,6 @@ Ide utama dari proyek ini adalah:
 1. Menghilangkan Horizontal dependency sepenuhnya, dengan memunculkan module baru yakni **Provider** dan **Igniter**.
 2. Menghilangkan state dari data layer, dengan memaksimalkan functional pattern pada data layer.
 3. Me-lokalisasi side effect. Kita harus membatasi module yang bisa melakukan side effect dan sebisa mungkin menghilangkannya.
-
-# FREE TO USE
-Anda dapat menggunakan codebase ini sebagai basis proyek anda dan memodifikasinya untuk keperluan proyek anda. Saya juga akan sangat senang untuk menerima masukan dan kontribusi dari anda.
 
 # Project Arsitektur
 Projek arsitektur mencakup keseluruhan arsitektur dari gradle project kita. Tidak segala hal bisa kita lakukan dengan gradle project akan tetapi **Pengecualian adalah hal yang buruk** jika kita tidak membatasinya. Jadi kita akan membatasi pengecualian tersebut hanya 2 hal.
