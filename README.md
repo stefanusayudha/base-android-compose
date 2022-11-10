@@ -143,6 +143,8 @@ Pendekatan **Pure Function** berarti;
 # Contributing
 Saya akan sangat senang untuk menerima kontribusi dari siappun, dan saya mebuka proyek ini untuk kontribusi. Akan tetapi untuk sekarang saya masih belum sempat menyiapkan prosedur kontribusi. Oleh karena itu, jika anda berminat untuk melakukan kontribusi, anda dapat menghubungi saya secara langsung. Anda dapat menemukan saya section author di bawah.
 
+Anda dapat melihat perkembangan proyek ini [disini](https://github.com/users/stefanusayudha/projects/2).
+
 # Meet the Author
 Saya steve, programmer for fun. Anda dapat menemukan saya pada akun berikut:
 
