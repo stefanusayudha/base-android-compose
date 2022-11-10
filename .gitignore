@@ -1,5 +1,5 @@
 /.gradle/
-/.gradle/**
+**/.gradle/**
 **/build/**
 /keystore.properties
 /testsignature
