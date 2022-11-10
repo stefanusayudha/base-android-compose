@@ -1,5 +1,5 @@
 
-Sebelumnya saya ingin mengucapkan untuk para kontributor yang sangat luar biasa [Kontributor](CREDITS.md).
+Sebelumnya saya ingin mengucapkan terimakasih dan apresiasi untuk para kontributor yang sangat luar biasa [Kontributor](CREDITS.md).
 
  - **Joseph Sanjaya** (meet: [joseph](https://github.com/JosephSanjaya)). Original designer dari Konsep dan Terminologi Navigasi yang luarbiasa dalam codebase ini.
 
