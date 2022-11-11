@@ -21,7 +21,7 @@ import com.stefanus_ayudha.core.common.util.request.Failed
 import com.stefanus_ayudha.core.common.util.request.Loading
 import com.stefanus_ayudha.core.common.util.request.Success
 import com.stefanus_ayudha.core.ui.util.toDp
-import com.stefanus_ayudha.modsample.todolist.data.model.TodoMdl
+import com.stefanus_ayudha.modsample.todolist.data.model.TDMDL
 import com.stefanus_ayudha.modsample.todolist.data.payload.GetTodoListPld
 import com.stefanus_ayudha.modsample.todolist.ui.screen.viewmodel.TodoViewModel
 
@@ -85,7 +85,7 @@ fun Content(
 @Composable
 fun ListContent(
     modifier: Modifier = Modifier,
-    list: List<TodoMdl> = listOf()
+    list: List<TDMDL> = listOf()
 ) = LazyColumn(
     modifier = modifier
 ) {
@@ -106,7 +106,7 @@ fun ListContent(
 
 @Composable
 fun ListItem(
-    item: TodoMdl
+    item: TDMDL
 ) = Card(
     shape = RoundedCornerShape(8.toDp),
     modifier = Modifier
@@ -162,6 +162,6 @@ fun Preview() {
 @Preview(showSystemUi = false)
 fun ListPreview() {
     Box {
-        ListContent(list = TodoMdl.MOCK_LIST)
+        ListContent(list = TDMDL.MOCK_LIST)
     }
 }
