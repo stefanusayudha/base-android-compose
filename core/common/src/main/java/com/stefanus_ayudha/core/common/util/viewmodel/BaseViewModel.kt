@@ -19,7 +19,7 @@ import kotlin.coroutines.CoroutineContext
 
 abstract class BaseViewModel : ViewModel(), BaseViewModelUseCase {
 
-    abstract inner class State<T, P : Payload> : StateUseCase<T, P>{
+    abstract inner class State<T, P : Payload> : StateUseCase<T, P> {
         private val state = MutableStateFlow<RequestState<T>>(Default())
         private var job: Job? = null
 
@@ -91,4 +91,12 @@ abstract class BaseViewModel : ViewModel(), BaseViewModelUseCase {
     }
 
     abstract override fun clear()
+}
+
+fun <T, P : Payload> BaseViewModel.stateCreator(
+    operator: suspend (P) -> T
+): BaseViewModel.State<T, P> {
+    return object : BaseViewModel.State<T, P>() {
+        override val operator = operator
+    }
 }
