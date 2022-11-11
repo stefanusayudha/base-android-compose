@@ -1,5 +1,5 @@
 import com.stefanus_ayudha.plugins.defaultAppConfig
-import com.ckundr.plugins.getKeyStoreProperties
+import com.stefanus_ayudha.plugins.getKeyStoreProperties
 
 plugins {
     id(libs.plugins.android.application.get().pluginId)
