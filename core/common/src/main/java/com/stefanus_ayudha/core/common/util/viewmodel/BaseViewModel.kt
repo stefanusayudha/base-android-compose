@@ -51,7 +51,8 @@ abstract class BaseViewModel : ViewModel(), BaseViewModelUseCase {
 
         @Composable
         override fun collectAsState() = state.collectAsState()
-        override fun request(payload: P) {
+
+        override fun requestUpdate(payload: P) {
             state.value = Loading()
             job?.cancel()
             job = viewModelScope.launch(
@@ -73,11 +74,20 @@ abstract class BaseViewModel : ViewModel(), BaseViewModelUseCase {
             }
         }
 
+        @Deprecated("Semantic correction. Soon be deleted.", ReplaceWith("requestUpdate(payload)"))
+        override fun request(payload: P) {
+            requestUpdate(payload)
+        }
+
         override fun resetClear() {
             job?.cancel()
             state.value = Default()
         }
 
+        /**
+         * Operator will handle state update request
+         * @param payload : Payload.
+         */
         abstract override val operator: suspend (payload: P) -> T
     }
 
@@ -93,10 +103,18 @@ abstract class BaseViewModel : ViewModel(), BaseViewModelUseCase {
     abstract override fun clear()
 }
 
+@Deprecated(
+    "Semantic correction. Soon be deleted",
+    ReplaceWith("createStateHolder(operator)")
+)
 fun <T, P : Payload> BaseViewModel.stateCreator(
     operator: suspend (P) -> T
 ): BaseViewModel.State<T, P> {
-    return object : BaseViewModel.State<T, P>() {
-        override val operator = operator
-    }
+    return createStateHolder(operator)
+}
+
+fun <T, P : Payload> BaseViewModel.createStateHolder(
+    updateOperator: suspend (P) -> T
+): BaseViewModel.State<T, P> = object : BaseViewModel.State<T, P>() {
+    override val operator = updateOperator
 }
