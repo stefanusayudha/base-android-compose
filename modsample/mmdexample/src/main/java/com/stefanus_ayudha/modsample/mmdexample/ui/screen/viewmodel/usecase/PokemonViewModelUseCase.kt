@@ -5,5 +5,5 @@ import com.stefanus_ayudha.control.provider.sample.pokemon.payload.GetPokemonByI
 import com.stefanus_ayudha.core.common.util.viewmodel.BaseViewModel
 
 interface PokemonViewModelUseCase {
-    val pokemonListState: BaseViewModel.State<PokemonDataMdl, GetPokemonByIdPld>
+    val pokemonState: BaseViewModel.State<PokemonDataMdl, GetPokemonByIdPld>
 }
