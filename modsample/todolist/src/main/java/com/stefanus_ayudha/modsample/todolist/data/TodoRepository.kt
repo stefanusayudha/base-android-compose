@@ -1,13 +1,13 @@
 package com.stefanus_ayudha.modsample.todolist.data
 
-import com.stefanus_ayudha.modsample.todolist.data.model.TodoMdl
+import com.stefanus_ayudha.modsample.todolist.data.model.TDMDL
 import com.stefanus_ayudha.modsample.todolist.data.payload.GetTodoByIdPld
 import com.stefanus_ayudha.modsample.todolist.data.payload.GetTodoListPld
 import com.stefanus_ayudha.modsample.todolist.data.src.web.todoListWebApi
 
 suspend fun getTodoList(
     payload: GetTodoListPld
-): List<TodoMdl> {
+): List<TDMDL> {
     return todoListWebApi.getTodoList(
         payload.getQueryMap()
     )
@@ -15,7 +15,7 @@ suspend fun getTodoList(
 
 suspend fun getTodoById(
     payload: GetTodoByIdPld
-): TodoMdl {
+): TDMDL {
     return todoListWebApi.getTodoById(
         payload.id
     )

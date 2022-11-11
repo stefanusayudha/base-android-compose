@@ -4,13 +4,13 @@ import com.stefanus_ayudha.core.network.GetPokemonByIdQuery
 import com.stefanus_ayudha.core.network.GetPokemonListQuery
 import com.stefanus_ayudha.core.network.data.Secured
 import com.stefanus_ayudha.core.network.util.apolloClient
-import com.stefanus_ayudha.modsample.pokemon.data.payload.GetPokemonByIdPld
-import com.stefanus_ayudha.modsample.pokemon.data.payload.GetPokemonListPld
+import com.stefanus_ayudha.modsample.pokemon.data.payload.GPBIPLD
+import com.stefanus_ayudha.modsample.pokemon.data.payload.GPLPLD
 
 private val apiClient by lazy { apolloClient(Secured.getBasePokemonUrl()) }
 
 suspend fun getPokemonListWeb(
-    payload: GetPokemonListPld
+    payload: GPLPLD
 ) = apiClient.query(
     GetPokemonListQuery(
         payload.limit,
@@ -19,7 +19,7 @@ suspend fun getPokemonListWeb(
 ).execute()
 
 suspend fun getPokemonByIdWeb(
-    payload: GetPokemonByIdPld
+    payload: GPBIPLD
 ) = apiClient.query(
     GetPokemonByIdQuery(
         payload.id
