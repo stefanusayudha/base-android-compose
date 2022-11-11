@@ -5,7 +5,6 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.stefanus_ayudha.core.common.util.request.Default
@@ -52,7 +51,7 @@ fun HomeScreen(
                         .height(16.toDp)
                 )
                 Text(
-                    text = with(vm.pokemonListState.collectAsState().value) {
+                    text = with(vm.pokemonState.collectAsState().value) {
                         when (this) {
                             is Default -> "Iddle"
                             is Failed -> "Error: ${e.message}"
