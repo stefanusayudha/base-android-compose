@@ -1,8 +1,6 @@
 import com.android.build.gradle.BaseExtension
-import com.ckundr.plugins.defaultLibraryConfig
-import com.ckundr.plugins.getKeyStoreProperties
-import java.io.FileInputStream
-import org.jetbrains.kotlin.konan.properties.Properties
+import com.stefanus_ayudha.plugins.defaultLibraryConfig
+import com.stefanus_ayudha.plugins.getKeyStoreProperties
 
 plugins {
     id("java-platform")
