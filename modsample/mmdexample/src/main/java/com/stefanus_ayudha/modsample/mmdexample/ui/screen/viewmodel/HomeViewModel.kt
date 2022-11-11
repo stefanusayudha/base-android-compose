@@ -6,22 +6,24 @@ import com.stefanus_ayudha.control.provider.sample.pokemon.payload.GetPokemonByI
 import com.stefanus_ayudha.core.common.util.koin.get
 import com.stefanus_ayudha.core.common.util.viewmodel.BaseViewModel
 
-class HomeViewModel : BaseViewModel(), HomeViewModelUseCase {
+class HomeViewModel(
+    private val pokemonSpaceStation: PokemonSpaceStation = get()
+) : BaseViewModel(), HomeViewModelUseCase {
 
-    private val pokemonSpaceStation = get<PokemonSpaceStation>()
-    override val pokemonListState = object : State<PokemonDataMdl, GetPokemonByIdPld>() {
-        override val operator: suspend (payload: GetPokemonByIdPld) -> PokemonDataMdl
-            get() = {
-                pokemonSpaceStation.getPokemonById(it)
-            }
-    }
+    override val pokemonState =
+        object : State<PokemonDataMdl, GetPokemonByIdPld>() {
+            override val operator: suspend (payload: GetPokemonByIdPld) -> PokemonDataMdl
+                get() = {
+                    pokemonSpaceStation.getPokemonById(it)
+                }
+        }
 
     override fun clear() {
         TODO("Not yet implemented")
     }
 
     init {
-        pokemonListState.request(
+        pokemonState.request(
             GetPokemonByIdPld(
                 11
             )
