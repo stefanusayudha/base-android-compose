@@ -16,6 +16,17 @@ Bagi saya it is like yikes. Sorry to say.
 
 Menurut saya ini tidak lagi bisa di sebut sebagai pure function.
 
+Contoh lain, dengan Hilt anda perlu melakukan ini:
+```
+@Inject late init var module: Module
+```
+
+Sementara dengan koin cukup seperti ini:
+```
+private val module: Module = get()
+```
+Bagi saya adalah pendekatan yang jauh lebih baik.
+
 ### Build Flavor
 Jika anda ingin mencoba build flavor staging dan release, anda perlu membuat sebuah keystore / key signature.
 Langkah petunjuk dapat anda lihat pada: [keystore.properties.example](keystore.properties.example)
