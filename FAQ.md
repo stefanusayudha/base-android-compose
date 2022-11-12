@@ -4,11 +4,11 @@ Ini lebih ke preferensi. Saya kurang suka hilt karena dia meng interfensi objek 
 Contoh:
 ```
 @Provides
-fun provideMusicDB(@ApplicationContext context: Context: MusicDatabase {
-  return Room. databaseBuilder (
-    context, 
-    MusicDatabase: :class. java, "music.db" .build()
-    )
+fun provideMusicDB(@ApplicationContext context: Context): MusicDatabase {
+  return Room.databaseBuilder (
+      context, 
+      MusicDatabase::class.java, "music.db" 
+  ).build()
 }
 ```
 
