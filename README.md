@@ -1,3 +1,6 @@
+This readme comes with another languages :
+- [English (EN)](README_EN.md)
+- [Bahasa Indonesia (ID)](README.md)
 
 # OOPS  
 Fitur utama masih di goreng.
