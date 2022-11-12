@@ -1,5 +1,7 @@
 ### Why Koin not Hilt
-Ini lebih ke preferensi. Saya kurang suka hilt karena dia meng interfensi objek yang akan di inject dan memberi sedikit pattern lebih pada objek yang menggunakan fitur ini. Yes, saya kurang suka menggunakan anotasi ketika melakukan injeksi. Salah satu contohnya pattern ini memaksa kita menggunakan late init, artinya proyek tidak hanya depend ke Hilt tapi pattern dari proyek juga akan tightly coupled ke Hilt itu sendiri.
+According to my expert friend, ada satu alasan bagus menggunakan Hilt, yaitu compilation check. Dimana dependensi akan di chek ketika compile time.
+
+Tapi dalam proyek ini lebih ke preferensi. Saya kurang suka hilt karena dia meng-interfensi objek yang akan di inject dan memberi sedikit pattern lebih pada objek yang menggunakan fitur ini. Yes, saya kurang suka menggunakan anotasi ketika melakukan injeksi. Salah satu contohnya pattern ini memaksa kita menggunakan late init, artinya proyek tidak hanya depend ke Hilt tapi pattern dari proyek juga akan tightly coupled ke Hilt itu sendiri.
 
 Contoh:
 ```
@@ -24,6 +26,8 @@ Sementara dengan koin cukup seperti ini:
 private val module: Module = get()
 ```
 Bagi saya adalah pendekatan yang jauh lebih baik.
+
+Lalu bagaimana jika dependensi lupa di declare? We go fight each other. We don't want peace.
 
 ### Build Flavor
 Jika anda ingin mencoba build flavor staging dan release, anda perlu membuat sebuah keystore / key signature.
