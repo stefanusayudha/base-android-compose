@@ -1,5 +1,5 @@
 ### Why Koin not Hilt
-According to my expert friend, ada satu alasan bagus menggunakan Hilt, yaitu compilation check. Dimana dependensi akan di chek ketika compile time.
+According to my expert friend, ada satu alasan bagus menggunakan Hilt, yaitu compilation check. Dimana dependensi akan di chek ketika compile time. Ini bagus jika kita bekerja dengan tim besar, mengurangi effor QA untuk melakukan pengecekan.
 
 Tapi dalam proyek ini lebih ke preferensi. Saya kurang suka hilt karena dia meng-interfensi objek yang akan di inject dan memberi sedikit pattern lebih pada objek yang menggunakan fitur ini. Yes, saya kurang suka menggunakan anotasi ketika melakukan injeksi. Salah satu contohnya pattern ini memaksa kita menggunakan late init, artinya proyek tidak hanya depend ke Hilt tapi pattern dari proyek juga akan tightly coupled ke Hilt itu sendiri.
 
