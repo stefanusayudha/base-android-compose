@@ -12,9 +12,7 @@ fun provideMusicDB(@ApplicationContext context: Context): MusicDatabase {
 }
 ```
 
-Bagi saya it is like yikes. Sorry to say.
-
-Menurut saya contoh di atas tidak lagi bisa di sebut sebagai pure function.
+Bagi saya it is like yikes. Menurut saya contoh di atas tidak lagi bisa di sebut sebagai pure function.
 
 Contoh lain, dengan Hilt anda perlu melakukan ini:
 ```
