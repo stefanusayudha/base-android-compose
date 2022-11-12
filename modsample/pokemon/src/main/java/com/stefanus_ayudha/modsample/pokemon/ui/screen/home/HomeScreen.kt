@@ -13,6 +13,7 @@ import com.stefanus_ayudha.core.common.util.request.Default
 import com.stefanus_ayudha.core.common.util.request.Failed
 import com.stefanus_ayudha.core.common.util.request.Loading
 import com.stefanus_ayudha.core.common.util.request.Success
+import com.stefanus_ayudha.core.common.util.viewmodel.state.onState
 import com.stefanus_ayudha.core.network.GetPokemonListQuery
 import com.stefanus_ayudha.core.ui.util.toDp
 import com.stefanus_ayudha.modsample.pokemon.ui.screen.home.viewmodel.HomeViewModel
@@ -27,21 +28,21 @@ fun HomeScreen(
         .then(modifier)
 ) {
 
-    val pokemonList = vm.pokemonListState.collectAsState().value
-    when (pokemonList) {
-        is Default -> {
-            Iddle()
-        }
-        is Loading -> {
-            LoadingPage()
-        }
-        is Failed -> {
-            Error(pokemonList.e)
-        }
-        is Success -> {
-            SuccessPage(pokemonList.value)
-        }
-    }
+    vm.pokemonListState
+        .onState(
+            default = {
+                Iddle()
+            },
+            loading = {
+                LoadingPage()
+            },
+            failed = {
+                Error(it)
+            },
+            success = {
+                SuccessPage(it)
+            }
+        )
 }
 
 @Composable
