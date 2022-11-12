@@ -11,6 +11,7 @@ import com.stefanus_ayudha.core.common.util.request.Default
 import com.stefanus_ayudha.core.common.util.request.Failed
 import com.stefanus_ayudha.core.common.util.request.Loading
 import com.stefanus_ayudha.core.common.util.request.Success
+import com.stefanus_ayudha.core.common.util.viewmodel.state.mapState
 import com.stefanus_ayudha.core.ui.util.toDp
 import com.stefanus_ayudha.modsample.mmdexample.ui.screen.viewmodel.HomeViewModel
 
@@ -51,15 +52,13 @@ fun HomeScreen(
                         .height(16.toDp)
                 )
                 Text(
-                    text = with(vm.pokemonState.collectAsState().value) {
-                        when (this) {
-                            is Default -> "Iddle"
-                            is Failed -> "Error: ${e.message}"
-                            is Loading -> "Loading.."
-                            is Success -> "id: ${value.id} \nname: ${value.name}"
-                        }
-                    }
-
+                    text = vm.pokemonState
+                        .mapState(
+                            { "" },
+                            { "Loading.." },
+                            { "Error: ${it.message}" },
+                            { "id: ${it.id} \nname: ${it.name}" },
+                        )
                 )
             }
 

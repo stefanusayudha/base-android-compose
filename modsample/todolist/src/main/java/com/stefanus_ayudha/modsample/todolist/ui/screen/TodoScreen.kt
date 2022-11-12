@@ -20,6 +20,7 @@ import com.stefanus_ayudha.core.common.util.request.Default
 import com.stefanus_ayudha.core.common.util.request.Failed
 import com.stefanus_ayudha.core.common.util.request.Loading
 import com.stefanus_ayudha.core.common.util.request.Success
+import com.stefanus_ayudha.core.common.util.viewmodel.state.onState
 import com.stefanus_ayudha.core.ui.util.toDp
 import com.stefanus_ayudha.modsample.todolist.data.model.TDMDL
 import com.stefanus_ayudha.modsample.todolist.data.payload.GetTodoListPld
@@ -56,30 +57,32 @@ fun Content(
 ) = Box(
     modifier = modifier
 ) {
-    when (val state = vm.todoListState.collectAsState().value) {
-        is Default -> Text(
-            modifier = Modifier
-                .align(Alignment.Center),
-            text = "Iddle"
+    vm.todoListState
+        .onState(
+            default = {
+                Text(text = "Idle")
+            },
+            loading = {
+                ProgressBlocker(
+                    modifier = Modifier
+                        .align(Alignment.Center)
+                )
+            },
+            failed = {
+                Text(
+                    modifier = Modifier
+                        .align(Alignment.Center),
+                    text = "Failed: ${it.message}"
+                )
+            },
+            success = {
+                ListContent(
+                    modifier = Modifier
+                        .align(Alignment.Center),
+                    list = it
+                )
+            }
         )
-
-        is Failed -> Text(
-            modifier = Modifier
-                .align(Alignment.Center),
-            text = "Failed: ${state.e.message}"
-        )
-
-        is Loading -> ProgressBlocker(
-            modifier = Modifier
-                .align(Alignment.Center)
-        )
-
-        is Success -> ListContent(
-            modifier = Modifier
-                .align(Alignment.Center),
-            list = state.value
-        )
-    }
 }
 
 @Composable
