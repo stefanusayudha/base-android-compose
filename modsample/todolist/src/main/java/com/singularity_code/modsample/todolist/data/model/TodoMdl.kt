@@ -1,0 +1,33 @@
+package com.singularity_code.modsample.todolist.data.model
+
+import com.google.gson.annotations.SerializedName
+
+/**
+ * sort for TodoMdl
+ */
+typealias TDMDL = TodoMdl
+
+data class TodoMdl(
+    @field:SerializedName("id")
+    val id: Int? = null,
+
+    @field:SerializedName("completed")
+    val completed: Boolean? = null,
+
+    @field:SerializedName("title")
+    val title: String? = null,
+
+    @field:SerializedName("userId")
+    val userId: String? = null
+) {
+    companion object {
+        val MOCK_LIST = (1..10).map {
+            TDMDL(
+                id = it,
+                completed = it % 3 == 0,
+                title = "Todo Number $it",
+                userId = "User $it"
+            )
+        }
+    }
+}
