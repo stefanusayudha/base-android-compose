@@ -11,7 +11,7 @@ Main feature is in cooking.
 Be sure to follow this project to get notification about project updates.
 
 # THANK YOU
-First i want to thank your and appreciate all the contributors of this project; [Contributors](CREDITS.md).
+First i want to thank you and appreciate all the contributors of this project; [Contributors](CREDITS.md).
 
 - **Joseph Sanjaya** (meet: [joseph](https://github.com/JosephSanjaya)).
  The original Idea of the navigation's concept and terminology of this codebase.
