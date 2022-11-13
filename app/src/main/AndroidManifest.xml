@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.stefanus_ayudha.basearchitecture">
+    package="com.singularity_code.basearchitecture">
 
     <application
-        android:name="com.stefanus_ayudha.control.igniter.Application"
+        android:name="com.singularity_code.control.igniter.Application"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BaseArchitecture">
         <activity
-            android:name="com.stefanus_ayudha.modsample.splash.ui.activity.SplashActivity"
+            android:name="com.singularity_code.modsample.splash.ui.activity.SplashActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.BaseArchitecture">
@@ -29,13 +29,13 @@
         </activity>
 
         <activity
-            android:name="com.stefanus_ayudha.modsample.todolist.ui.activity.TodoActivity"
+            android:name="com.singularity_code.modsample.todolist.ui.activity.TodoActivity"
             android:exported="true" />
         <activity
-            android:name="com.stefanus_ayudha.modsample.pokemon.ui.activity.PokemonActivity"
+            android:name="com.singularity_code.modsample.pokemon.ui.activity.PokemonActivity"
             android:exported="true" />
         <activity
-            android:name="com.stefanus_ayudha.modsample.mmdexample.ui.activity.MMDExampleActivity"
+            android:name="com.singularity_code.mmdexample.ui.activity.MMDExampleActivity"
             android:exported="true" />
     </application>
 

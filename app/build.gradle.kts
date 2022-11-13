@@ -1,5 +1,5 @@
-import com.stefanus_ayudha.plugins.defaultAppConfig
-import com.stefanus_ayudha.plugins.getKeyStoreProperties
+import com.singularity_code.plugins.defaultAppConfig
+import com.singularity_code.plugins.getKeyStoreProperties
 
 plugins {
     id(libs.plugins.android.application.get().pluginId)
@@ -12,7 +12,7 @@ val keystoreProperties = getKeyStoreProperties(
 )
 
 defaultAppConfig(
-    appId = "com.stefanus_ayudha.basearchitecture",
+    appId = "com.singularity_code.basearchitecture",
     versionCode = 1,
     versionName = "1.0",
     keystoreProperties = keystoreProperties

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.stefanus_ayudha.modsample.splash">
+    package="com.singularity_code.modsample.splash">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
