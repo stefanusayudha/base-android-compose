@@ -82,24 +82,28 @@ private fun Project.defaultConfigBuilder(
                     "proguard-rules.pro"
                 )
             }
-            create("staging") {
-                isMinifyEnabled = true
-                isDebuggable = true
-                signingConfig = signingConfigs.getByName("release")
-                proguardFiles(
-                    getDefaultProguardFile("proguard-android-optimize.txt"),
-                    "proguard-rules.pro"
-                )
-            }
-            getByName("release") {
-                isMinifyEnabled = true
-                isDebuggable = false
-                signingConfig = signingConfigs.getByName("release")
-                proguardFiles(
-                    getDefaultProguardFile("proguard-android-optimize.txt"),
-                    "proguard-rules.pro"
-                )
-            }
+
+            if (keystoreProperties != null)
+                create("staging") {
+                    isMinifyEnabled = true
+                    isDebuggable = true
+                    signingConfig = signingConfigs.getByName("release")
+                    proguardFiles(
+                        getDefaultProguardFile("proguard-android-optimize.txt"),
+                        "proguard-rules.pro"
+                    )
+                }
+
+            if (keystoreProperties != null)
+                getByName("release") {
+                    isMinifyEnabled = true
+                    isDebuggable = false
+                    signingConfig = signingConfigs.getByName("release")
+                    proguardFiles(
+                        getDefaultProguardFile("proguard-android-optimize.txt"),
+                        "proguard-rules.pro"
+                    )
+                }
         }
         compileOptions {
             sourceCompatibility = JavaVersion.VERSION_1_8
@@ -118,12 +122,16 @@ private fun Project.defaultConfigBuilder(
 
 fun Project.getKeyStoreProperties(
     path: String
-) = Properties().apply {
-    kotlin.runCatching {
-        load(
+): Properties? = Properties().let {
+
+    val fileLoaded = kotlin.runCatching {
+        it.load(
             FileInputStream(
                 file(path)
             )
         )
-    }
+    }.isSuccess
+
+    if (fileLoaded) it
+    else null
 }
