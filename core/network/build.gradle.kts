@@ -15,5 +15,5 @@ dependencies {
 }
 
 apollo {
-    packageName.set("com.stefanus_ayudha.core.network")
+    packageName.set("com.singularity_code.core.network")
 }

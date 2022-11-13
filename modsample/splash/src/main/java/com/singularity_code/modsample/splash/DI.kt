@@ -1,0 +1,1 @@
+package com.singularity_code.modsample.splash

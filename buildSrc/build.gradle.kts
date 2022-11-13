@@ -7,7 +7,7 @@ gradlePlugin {
     plugins {
         register("common-binary-plugin") {
             id = "common-binary-plugin"
-            implementationClass = "com.stefanus_ayudha.plugins.CommonBinaryPlugin"
+            implementationClass = "com.singularity_code.plugins.CommonBinaryPlugin"
         }
     }
 }

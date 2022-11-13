@@ -1,6 +1,6 @@
 import com.android.build.gradle.BaseExtension
-import com.stefanus_ayudha.plugins.defaultLibraryConfig
-import com.stefanus_ayudha.plugins.getKeyStoreProperties
+import com.singularity_code.plugins.defaultLibraryConfig
+import com.singularity_code.plugins.getKeyStoreProperties
 
 plugins {
     id("java-platform")
