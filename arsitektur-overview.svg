@@ -21,8 +21,8 @@
      showgrid="true"
      showguides="false"
      inkscape:current-layer="layer1"
-     inkscape:cx="888.36969"
-     inkscape:cy="1055.1285"
+     inkscape:cx="607.13183"
+     inkscape:cy="607.13183"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:pagecheckerboard="0"
@@ -33,7 +33,7 @@
      inkscape:window-width="1440"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:zoom="0.32981765" />
+     inkscape:zoom="0.41177218" />
   <defs
      id="defs2">
     <marker
@@ -148,82 +148,6 @@
          style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path135-9-6-3-4"
-         transform="scale(0.5)" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="TriangleStart-9-3-7"
-       markerHeight="6.155385"
-       markerWidth="5.3244081"
-       orient="auto-start-reverse"
-       preserveAspectRatio="xMidYMid"
-       refX="0"
-       refY="0"
-       viewBox="0 0 5.3244081 6.1553851"
-       inkscape:collect="always"
-       inkscape:isstock="true"
-       inkscape:stockid="TriangleStart">
-      <path
-         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
-         d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path135-9-6-32"
-         transform="scale(0.5)" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="TriangleStart-9-3-7-6"
-       markerHeight="6.155385"
-       markerWidth="5.3244081"
-       orient="auto-start-reverse"
-       preserveAspectRatio="xMidYMid"
-       refX="0"
-       refY="0"
-       viewBox="0 0 5.3244081 6.1553851"
-       inkscape:collect="always"
-       inkscape:isstock="true"
-       inkscape:stockid="TriangleStart">
-      <path
-         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
-         d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path135-9-6-32-3"
-         transform="scale(0.5)" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="TriangleStart-9-3-7-6-0"
-       markerHeight="6.155385"
-       markerWidth="5.3244081"
-       orient="auto-start-reverse"
-       preserveAspectRatio="xMidYMid"
-       refX="0"
-       refY="0"
-       viewBox="0 0 5.3244081 6.1553851"
-       inkscape:collect="always"
-       inkscape:isstock="true"
-       inkscape:stockid="TriangleStart">
-      <path
-         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
-         d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path135-9-6-32-3-6"
-         transform="scale(0.5)" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="TriangleStart-9-3-7-4"
-       markerHeight="6.155385"
-       markerWidth="5.3244081"
-       orient="auto-start-reverse"
-       preserveAspectRatio="xMidYMid"
-       refX="0"
-       refY="0"
-       viewBox="0 0 5.3244081 6.1553851"
-       inkscape:collect="always"
-       inkscape:isstock="true"
-       inkscape:stockid="TriangleStart">
-      <path
-         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
-         d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path135-9-6-32-0"
          transform="scale(0.5)" />
     </marker>
     <marker
@@ -456,25 +380,6 @@
     </marker>
     <marker
        style="overflow:visible"
-       id="TriangleStart-9-3-4-8-1-7"
-       markerHeight="6.155385"
-       markerWidth="5.3244081"
-       orient="auto-start-reverse"
-       preserveAspectRatio="xMidYMid"
-       refX="0"
-       refY="0"
-       viewBox="0 0 5.3244081 6.1553851"
-       inkscape:collect="always"
-       inkscape:isstock="true"
-       inkscape:stockid="TriangleStart">
-      <path
-         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
-         d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path135-9-6-3-4-2-96"
-         transform="scale(0.5)" />
-    </marker>
-    <marker
-       style="overflow:visible"
        id="TriangleStart-9-3-76"
        markerHeight="6.155385"
        markerWidth="5.3244081"
@@ -513,7 +418,7 @@
     </marker>
     <marker
        style="overflow:visible"
-       id="TriangleStart-9-3-4-8-1-7-29"
+       id="TriangleStart-9-3-4-8-1-7-0"
        markerHeight="6.155385"
        markerWidth="5.3244081"
        orient="auto-start-reverse"
@@ -527,12 +432,12 @@
       <path
          style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
          d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path135-9-6-3-4-2-96-8"
+         id="path135-9-6-3-4-2-96-5"
          transform="scale(0.5)" />
     </marker>
     <marker
        style="overflow:visible"
-       id="TriangleStart-9-3-7-1"
+       id="TriangleStart-9-3-7-2"
        markerHeight="6.155385"
        markerWidth="5.3244081"
        orient="auto-start-reverse"
@@ -546,12 +451,12 @@
       <path
          style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
          d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path135-9-6-32-1"
+         id="path135-9-6-32-2"
          transform="scale(0.5)" />
     </marker>
     <marker
        style="overflow:visible"
-       id="TriangleStart-9-3-7-4-6"
+       id="TriangleStart-9-3-7-4-7"
        markerHeight="6.155385"
        markerWidth="5.3244081"
        orient="auto-start-reverse"
@@ -565,12 +470,12 @@
       <path
          style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
          d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path135-9-6-32-0-1"
+         id="path135-9-6-32-0-3"
          transform="scale(0.5)" />
     </marker>
     <marker
        style="overflow:visible"
-       id="TriangleStart-9-3-7-6-1"
+       id="TriangleStart-9-3-7-6-7"
        markerHeight="6.155385"
        markerWidth="5.3244081"
        orient="auto-start-reverse"
@@ -584,12 +489,12 @@
       <path
          style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
          d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path135-9-6-32-3-81"
+         id="path135-9-6-32-3-9"
          transform="scale(0.5)" />
     </marker>
     <marker
        style="overflow:visible"
-       id="TriangleStart-9-3-7-6-0-1"
+       id="TriangleStart-9-3-7-6-0-0"
        markerHeight="6.155385"
        markerWidth="5.3244081"
        orient="auto-start-reverse"
@@ -603,7 +508,7 @@
       <path
          style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
          d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path135-9-6-32-3-6-5"
+         id="path135-9-6-32-3-6-2"
          transform="scale(0.5)" />
     </marker>
   </defs>
@@ -622,53 +527,27 @@
            transform="translate(-2.018413,1.3456087)" />
       </g>
     </g>
-    <g
-       id="g1112-0-0-0-1-1-5-3"
-       transform="translate(261.2529,71.058786)">
-      <g
-         id="g4750-1">
-        <rect
-           style="fill:#008080;stroke:#0036fa;stroke-width:0.482042"
-           height="9.7341452"
-           id="rect184-2-9-6-5-1-5-0"
-           ry="0.034433544"
-           width="39.270771"
-           x="86.666557"
-           y="144.59613" />
-        <text
-           style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:1.013"
-           id="text398-4-8-0-5-1-6-2"
-           x="98.43689"
-           y="150.06747"
-           xml:space="preserve"><tspan
-             style="fill:#ffffff;stroke:none;stroke-width:1.013"
-             id="tspan396-8-6-3-4-0-7-3"
-             x="98.43689"
-             y="150.06747"
-             sodipodi:role="line">Igniter</tspan></text>
-      </g>
-    </g>
     <text
        style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;stroke:none;stroke-width:1.013;stroke-opacity:1"
        id="text2509-0-2-6"
-       x="330.89682"
-       y="191.19377"
+       x="43.083389"
+       y="227.09566"
        xml:space="preserve"><tspan
          sodipodi:role="line"
          id="tspan2983"
-         x="330.89682"
-         y="191.19377">App is kind of igniter.</tspan><tspan
+         x="43.083389"
+         y="227.09566">App is kind of igniter.</tspan><tspan
          sodipodi:role="line"
-         x="330.89682"
-         y="195.60347"
-         id="tspan2987">It regoster Activity to manifest.</tspan><tspan
+         x="43.083389"
+         y="231.50537"
+         id="tspan2987">It register Activity to manifest.</tspan><tspan
          sodipodi:role="line"
-         x="330.89682"
-         y="200.0132"
+         x="43.083389"
+         y="235.91508"
          id="tspan2989">It can behaves like Igniter by injecting modules.</tspan><tspan
          sodipodi:role="line"
-         x="330.89682"
-         y="204.4229"
+         x="43.083389"
+         y="240.3248"
          id="tspan2991">But it should not provide any module.</tspan></text>
     <text
        style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;stroke:none;stroke-width:1.013;stroke-opacity:1"
@@ -681,11 +560,6 @@
          x="330.42633"
          y="200.36824"
          sodipodi:role="line" /></text>
-    <path
-       style="fill:none;stroke:#008080;stroke-width:0.513;stroke-dasharray:none;stroke-opacity:1"
-       d="m 286.53113,230.34115 c -6.90577,4.68822 -8.43377,15.06247 -3.286,21.63282 4.91887,6.27821 17.14239,7.32615 24.91882,2.19067 6.25734,-4.13228 4.34757,-10.64159 10.40566,-15.06083 8.04838,-5.87111 26.20292,-6.77559 36.14598,-7.39349 14.7765,-0.91827 31.85247,3.86608 39.15815,-2.4645 4.56119,-3.9524 5.3005,-10.51959 1.09533,-15.88233 -5.56094,-7.09172 -36.82168,-4.74013 -58.05263,-1.09533 -20.23019,3.47299 -32.53055,5.95169 -50.38531,18.07299 z"
-       id="path6810"
-       sodipodi:nodetypes="sssssssss" />
     <path
        style="fill:#000000;stroke:#e91f44;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-7)"
        d="m 53.640964,61.835688 0.0604,7.58293"
@@ -1000,6 +874,37 @@
       </g>
     </g>
     <g
+       id="g1112-0-0-0-1-1-5"
+       transform="translate(228.91464,-71.240352)">
+      <g
+         id="g1191-3-4-7-52-2"
+         transform="translate(-2.018413,1.3456087)">
+        <g
+           id="g3251-2"
+           transform="translate(-5.7421061)">
+          <rect
+             style="fill:#00ffff;stroke:#0036fa;stroke-width:0.454905"
+             height="9.761282"
+             id="rect184-2-9-6-5-1-66"
+             ry="0.034529537"
+             width="34.876442"
+             x="94.413513"
+             y="143.23695" />
+          <text
+             style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;stroke:none;stroke-width:1.013"
+             id="text398-4-8-0-5-1-7"
+             x="103.43058"
+             y="149.4276"
+             xml:space="preserve"><tspan
+               style="fill:#000000;stroke:none;stroke-width:1.013"
+               id="tspan396-8-6-3-4-0-8"
+               x="103.43058"
+               y="149.4276"
+               sodipodi:role="line">Provider</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
        id="g1112-0-0-0-1-2"
        transform="translate(103.03389,-49.343686)">
       <g
@@ -1210,37 +1115,6 @@
       </g>
     </g>
     <g
-       id="g1112-0-0-0-1-1-53"
-       transform="translate(229.24046,-70.531768)">
-      <g
-         id="g1191-3-4-7-52-7"
-         transform="translate(-2.018413,1.3456087)">
-        <g
-           id="g3251-9"
-           transform="translate(-5.7421061)">
-          <rect
-             style="fill:#00ff00;stroke:#0036fa;stroke-width:0.454905"
-             height="9.761282"
-             id="rect184-2-9-6-5-1-6"
-             ry="0.034529537"
-             width="34.876442"
-             x="94.413513"
-             y="143.23695" />
-          <text
-             style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;stroke:none;stroke-width:1.013"
-             id="text398-4-8-0-5-1-3"
-             x="96.847511"
-             y="149.4276"
-             xml:space="preserve"><tspan
-               style="fill:#000000;stroke:none;stroke-width:1.013"
-               id="tspan396-8-6-3-4-0-1"
-               x="96.847511"
-               y="149.4276"
-               sodipodi:role="line">Control Module</tspan></text>
-        </g>
-      </g>
-    </g>
-    <g
        id="g1112-0-0-0-1-2-5"
        transform="translate(274.48396,-48.773333)">
       <g
@@ -1330,366 +1204,220 @@
        d="M 383.31107,95.094478 341.96489,84.126968"
        id="path1364-1-6-7-6-4-8"
        sodipodi:nodetypes="cc" />
+    <text
+       style="font-weight:bold;font-size:2.11667px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;stroke:none;stroke-width:0.361604;stroke-dasharray:none;stroke-opacity:1"
+       id="text10377-3-4-7-9"
+       x="69.827408"
+       y="260.45602"
+       xml:space="preserve"><tspan
+         style="font-size:2.11667px;fill:#000000;stroke:none;stroke-width:0.361604"
+         id="tspan10375-9-6-9-9"
+         x="69.827408"
+         y="260.45602"
+         sodipodi:role="line">Exceptional</tspan><tspan
+         style="font-size:2.11667px;fill:#000000;stroke:none;stroke-width:0.361604"
+         x="69.827408"
+         y="263.10187"
+         sodipodi:role="line"
+         id="tspan2635-4-3-7">Dependency flow</tspan><tspan
+         style="font-size:2.11667px;fill:#000000;stroke:none;stroke-width:0.361604"
+         id="tspan4144-3-8-0"
+         x="69.827408"
+         y="265.74771"
+         sodipodi:role="line" /></text>
     <g
-       id="g1112-0-0-0-1-1-5"
-       transform="translate(14.267821,70.869226)">
+       id="g1112-0-0-0-1-1-5-3"
+       transform="translate(10.876326,115.39358)">
       <g
-         id="g4750">
+         id="g4750-9">
         <rect
            style="fill:#008080;stroke:#0036fa;stroke-width:0.482042"
            height="9.7341452"
-           id="rect184-2-9-6-5-1-5"
+           id="rect184-2-9-6-5-1-5-8"
            ry="0.034433544"
            width="39.270771"
            x="86.666557"
            y="144.59613" />
         <text
            style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:1.013"
-           id="text398-4-8-0-5-1-6"
+           id="text398-4-8-0-5-1-6-6"
            x="97.179382"
            y="150.18231"
            xml:space="preserve"><tspan
              style="fill:#ffffff;stroke:none;stroke-width:1.013"
-             id="tspan396-8-6-3-4-0-7"
+             id="tspan396-8-6-3-4-0-7-5"
              x="97.179382"
              y="150.18231"
              sodipodi:role="line">Igniter</tspan></text>
       </g>
     </g>
     <g
-       id="g3256">
-      <g
-         id="g9799-9-6"
-         transform="translate(46.86307,121.1758)">
-        <rect
-           style="fill:#ff00ff;stroke:#0036fa;stroke-width:0.364266"
-           height="9.8519201"
-           id="rect184-2-9-6-9-5-4"
-           ry="0.034850162"
-           width="22.157198"
-           x="38.754993"
-           y="142.24554" />
-        <text
-           style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:1.013"
-           id="text398-4-8-0-57-3-4"
+       id="g9799-9-6-7"
+       transform="translate(43.471575,165.70015)">
+      <rect
+         style="fill:#ff00ff;stroke:#0036fa;stroke-width:0.364266"
+         height="9.8519201"
+         id="rect184-2-9-6-9-5-4-6"
+         ry="0.034850162"
+         width="22.157198"
+         x="38.754993"
+         y="142.24554" />
+      <text
+         style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:1.013"
+         id="text398-4-8-0-57-3-4-2"
+         x="45.281769"
+         y="148.44878"
+         xml:space="preserve"><tspan
+           style="fill:#ffffff;stroke:none;stroke-width:1.013"
+           id="tspan396-8-6-3-2-1-4-7"
            x="45.281769"
            y="148.44878"
-           xml:space="preserve"><tspan
-             style="fill:#ffffff;stroke:none;stroke-width:1.013"
-             id="tspan396-8-6-3-2-1-4"
-             x="45.281769"
-             y="148.44878"
-             sodipodi:role="line">Core</tspan></text>
-      </g>
-      <path
-         style="fill:#ff00ff;fill-opacity:1;stroke:#ff00ff;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-4-8-1-7)"
-         d="m 98.263635,248.75341 -0.09493,12.09513"
-         id="path1364-1-6-9-0-6-5"
-         sodipodi:nodetypes="cc" />
+           sodipodi:role="line">Core</tspan></text>
+    </g>
+    <path
+       style="fill:#ff00ff;fill-opacity:1;stroke:#ff00ff;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-4-8-1-7-0)"
+       d="m 94.87214,293.27776 -0.09493,12.09513"
+       id="path1364-1-6-9-0-6-5-0"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g1112-0-0-0-1-1-7-4-3"
+       transform="translate(-9.9035851,137.84296)">
       <g
-         id="g1112-0-0-0-1-1-7-4"
-         transform="translate(-6.51209,93.318615)">
+         id="g1191-3-4-7-52-6-1-9"
+         transform="translate(-2.018413,1.3456087)">
         <g
-           id="g1191-3-4-7-52-6-1"
-           transform="translate(-2.018413,1.3456087)">
-          <g
-             id="g3251-8-0"
-             transform="translate(-5.7421061)">
-            <rect
-               style="fill:#00ffff;stroke:#0036fa;stroke-width:0.454905"
-               height="9.761282"
-               id="rect184-2-9-6-5-1-54-8"
-               ry="0.034529537"
-               width="34.876442"
-               x="94.413513"
-               y="143.23695" />
-            <text
-               style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;stroke:none;stroke-width:1.013"
-               id="text398-4-8-0-5-1-7-1"
+           id="g3251-8-0-9"
+           transform="translate(-5.7421061)">
+          <rect
+             style="fill:#00ffff;stroke:#0036fa;stroke-width:0.454905"
+             height="9.761282"
+             id="rect184-2-9-6-5-1-54-8-9"
+             ry="0.034529537"
+             width="34.876442"
+             x="94.413513"
+             y="143.23695" />
+          <text
+             style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;stroke:none;stroke-width:1.013"
+             id="text398-4-8-0-5-1-7-1-1"
+             x="104.58661"
+             y="149.22916"
+             xml:space="preserve"><tspan
+               style="fill:#000000;stroke:none;stroke-width:1.013"
+               id="tspan396-8-6-3-4-0-9-4-7"
                x="104.58661"
                y="149.22916"
-               xml:space="preserve"><tspan
-                 style="fill:#000000;stroke:none;stroke-width:1.013"
-                 id="tspan396-8-6-3-4-0-9-4"
-                 x="104.58661"
-                 y="149.22916"
-                 sodipodi:role="line">Igniter</tspan></text>
-          </g>
+               sodipodi:role="line">Igniter</tspan></text>
         </g>
       </g>
-      <path
-         style="fill:#ff00ff;stroke:#ca14ae;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-7)"
-         d="M 110.03485,226.32638 62.997023,236.40841"
-         id="path1364-1-6-5"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:#ff00ff;stroke:#ca14ae;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-7-4)"
-         d="m 128.3838,226.12457 43.85245,10.01052"
-         id="path1364-1-6-5-5"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:#ff00ff;stroke:#ca14ae;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-7-6)"
-         d="m 119.28543,226.12457 -17.62547,9.50531"
-         id="path1364-1-6-5-4"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:#ff00ff;stroke:#ca14ae;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-7-6-0)"
-         d="m 119.79053,226.0241 13.20401,9.88979"
-         id="path1364-1-6-5-4-0"
-         sodipodi:nodetypes="cc" />
+    </g>
+    <path
+       style="fill:#ff00ff;stroke:#ca14ae;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-7-2)"
+       d="m 68.300497,266.38615 25.708555,-0.16024"
+       id="path1364-1-6-5-2"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ff00ff;stroke:#ca14ae;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-7-4-7)"
+       d="m 124.9923,270.64892 43.85245,10.01052"
+       id="path1364-1-6-5-5-3"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ff00ff;stroke:#ca14ae;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-7-6-7)"
+       d="m 115.89393,270.64892 -17.625465,9.50531"
+       id="path1364-1-6-5-4-6"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ff00ff;stroke:#ca14ae;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-7-6-0-0)"
+       d="m 116.39903,270.54845 13.20401,9.88979"
+       id="path1364-1-6-5-4-0-5"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g1112-5-5-2-5"
+       transform="translate(-48.359049,116.9826)">
+      <rect
+         style="fill:#ff0000;stroke:#0036fa;stroke-width:0.332275"
+         height="9.8839111"
+         id="rect184-8-4-5-8"
+         ry="0.034963325"
+         width="18.376631"
+         x="95.811684"
+         y="143.55804" />
+      <text
+         style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:1.013"
+         id="text398-1-3-1-1"
+         x="101.22074"
+         y="149.4276"
+         xml:space="preserve"><tspan
+           style="fill:#ffffff;stroke:none;stroke-width:1.013"
+           id="tspan396-4-6-3-4"
+           x="101.22074"
+           y="149.4276"
+           sodipodi:role="line">App</tspan></text>
+    </g>
+    <g
+       id="g1112-0-7-5-9-7"
+       transform="translate(27.838615,138.18845)">
       <g
-         id="g1112-5-5-2"
-         transform="translate(-53.371468,93.468036)">
+         id="g1191-1-9-7-1"
+         transform="translate(-2.018413,1.3456087)">
         <rect
-           style="fill:#ff0000;stroke:#0036fa;stroke-width:0.332275"
-           height="9.8839111"
-           id="rect184-8-4-5"
-           ry="0.034963325"
-           width="18.376631"
-           x="95.811684"
-           y="143.55804" />
+           style="fill:#0000ff;stroke:#0036fa;stroke-width:0.364266"
+           height="9.8519201"
+           id="rect184-2-3-5-3-3"
+           ry="0.034850162"
+           width="22.157198"
+           x="95.031029"
+           y="143.19164" />
         <text
            style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:1.013"
-           id="text398-1-3-1"
-           x="101.22074"
+           id="text398-4-84-4-7-8"
+           x="96.847511"
            y="149.4276"
            xml:space="preserve"><tspan
              style="fill:#ffffff;stroke:none;stroke-width:1.013"
-             id="tspan396-4-6-3"
-             x="101.22074"
-             y="149.4276"
-             sodipodi:role="line">App</tspan></text>
-      </g>
-      <g
-         id="g1112-0-7-5-9"
-         transform="translate(31.23011,93.664097)">
-        <g
-           id="g1191-1-9-7"
-           transform="translate(-2.018413,1.3456087)">
-          <rect
-             style="fill:#0000ff;stroke:#0036fa;stroke-width:0.364266"
-             height="9.8519201"
-             id="rect184-2-3-5-3"
-             ry="0.034850162"
-             width="22.157198"
-             x="95.031029"
-             y="143.19164" />
-          <text
-             style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:1.013"
-             id="text398-4-84-4-7"
+             id="tspan396-8-8-9-5-4"
              x="96.847511"
              y="149.4276"
-             xml:space="preserve"><tspan
-               style="fill:#ffffff;stroke:none;stroke-width:1.013"
-               id="tspan396-8-8-9-5"
-               x="96.847511"
-               y="149.4276"
-               sodipodi:role="line">Module A</tspan></text>
-        </g>
-      </g>
-      <g
-         id="g1112-0-0-0-1-0"
-         transform="translate(69.153001,93.664093)">
-        <g
-           id="g1191-3-4-7-2"
-           transform="translate(-2.018413,1.3456087)">
-          <rect
-             style="fill:#0000ff;stroke:#0036fa;stroke-width:0.364266"
-             height="9.8519201"
-             id="rect184-2-9-6-5-18"
-             ry="0.034850162"
-             width="22.157198"
-             x="95.031029"
-             y="143.19164" />
-          <text
-             style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:1.013"
-             id="text398-4-8-0-5-7"
-             x="96.847511"
-             y="149.4276"
-             xml:space="preserve"><tspan
-               style="fill:#ffffff;stroke:none;stroke-width:1.013"
-               id="tspan396-8-6-3-4-1"
-               x="96.847511"
-               y="149.4276"
-               sodipodi:role="line">Module B</tspan></text>
-        </g>
+             sodipodi:role="line">Module A</tspan></text>
       </g>
     </g>
     <g
-       id="g3256-0"
-       transform="translate(247.70998,2.196406)">
+       id="g1112-0-0-0-1-0-8"
+       transform="translate(65.761506,138.18844)">
       <g
-         id="g9799-9-6-0"
-         transform="translate(46.86307,121.1758)">
+         id="g1191-3-4-7-2-0"
+         transform="translate(-2.018413,1.3456087)">
         <rect
-           style="fill:#ff00ff;stroke:#0036fa;stroke-width:0.364266"
+           style="fill:#0000ff;stroke:#0036fa;stroke-width:0.364266"
            height="9.8519201"
-           id="rect184-2-9-6-9-5-4-8"
+           id="rect184-2-9-6-5-18-4"
            ry="0.034850162"
            width="22.157198"
-           x="38.754993"
-           y="142.24554" />
+           x="95.031029"
+           y="143.19164" />
         <text
            style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:1.013"
-           id="text398-4-8-0-57-3-4-37"
-           x="45.281769"
-           y="148.44878"
-           xml:space="preserve"><tspan
-             style="fill:#ffffff;stroke:none;stroke-width:1.013"
-             id="tspan396-8-6-3-2-1-4-0"
-             x="45.281769"
-             y="148.44878"
-             sodipodi:role="line">Core</tspan></text>
-      </g>
-      <path
-         style="fill:#ff00ff;fill-opacity:1;stroke:#ff00ff;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-4-8-1-7-29)"
-         d="m 98.263635,248.75341 -0.09493,12.09513"
-         id="path1364-1-6-9-0-6-5-1"
-         sodipodi:nodetypes="cc" />
-      <g
-         id="g1112-0-0-0-1-1-7-4-3"
-         transform="translate(-6.51209,93.318615)">
-        <g
-           id="g1191-3-4-7-52-6-1-4"
-           transform="translate(-2.018413,1.3456087)">
-          <g
-             id="g3251-8-0-3"
-             transform="translate(-5.7421061)">
-            <rect
-               style="fill:#00ffff;stroke:#0036fa;stroke-width:0.454905"
-               height="9.761282"
-               id="rect184-2-9-6-5-1-54-8-7"
-               ry="0.034529537"
-               width="34.876442"
-               x="94.413513"
-               y="143.23695" />
-            <text
-               style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;stroke:none;stroke-width:1.013"
-               id="text398-4-8-0-5-1-7-1-7"
-               x="104.58661"
-               y="149.22916"
-               xml:space="preserve"><tspan
-                 style="fill:#000000;stroke:none;stroke-width:1.013"
-                 id="tspan396-8-6-3-4-0-9-4-5"
-                 x="104.58661"
-                 y="149.22916"
-                 sodipodi:role="line">Igniter</tspan></text>
-          </g>
-        </g>
-      </g>
-      <path
-         style="fill:#ff00ff;stroke:#ca14ae;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-7-1)"
-         d="M 110.03485,226.32638 62.997023,236.40841"
-         id="path1364-1-6-5-1"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:#ff00ff;stroke:#ca14ae;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-7-4-6)"
-         d="m 128.3838,226.12457 43.85245,10.01052"
-         id="path1364-1-6-5-5-2"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:#ff00ff;stroke:#ca14ae;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-7-6-1)"
-         d="m 119.28543,226.12457 -17.62547,9.50531"
-         id="path1364-1-6-5-4-6"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:#ff00ff;stroke:#ca14ae;stroke-width:0.39878;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-7-6-0-1)"
-         d="m 119.79053,226.0241 13.20401,9.88979"
-         id="path1364-1-6-5-4-0-6"
-         sodipodi:nodetypes="cc" />
-      <g
-         id="g1112-5-5-2-5"
-         transform="translate(-53.371468,93.468036)">
-        <rect
-           style="fill:#ff0000;stroke:#0036fa;stroke-width:0.332275"
-           height="9.8839111"
-           id="rect184-8-4-5-4"
-           ry="0.034963325"
-           width="18.376631"
-           x="95.811684"
-           y="143.55804" />
-        <text
-           style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:1.013"
-           id="text398-1-3-1-1"
-           x="101.22074"
+           id="text398-4-8-0-5-7-6"
+           x="96.847511"
            y="149.4276"
            xml:space="preserve"><tspan
              style="fill:#ffffff;stroke:none;stroke-width:1.013"
-             id="tspan396-4-6-3-7"
-             x="101.22074"
-             y="149.4276"
-             sodipodi:role="line">App</tspan></text>
-      </g>
-      <g
-         id="g1112-0-7-5-9-1"
-         transform="translate(31.23011,93.664097)">
-        <g
-           id="g1191-1-9-7-3"
-           transform="translate(-2.018413,1.3456087)">
-          <rect
-             style="fill:#0000ff;stroke:#0036fa;stroke-width:0.364266"
-             height="9.8519201"
-             id="rect184-2-3-5-3-4"
-             ry="0.034850162"
-             width="22.157198"
-             x="95.031029"
-             y="143.19164" />
-          <text
-             style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:1.013"
-             id="text398-4-84-4-7-8"
+             id="tspan396-8-6-3-4-1-0"
              x="96.847511"
              y="149.4276"
-             xml:space="preserve"><tspan
-               style="fill:#ffffff;stroke:none;stroke-width:1.013"
-               id="tspan396-8-8-9-5-6"
-               x="96.847511"
-               y="149.4276"
-               sodipodi:role="line">Module A</tspan></text>
-        </g>
-      </g>
-      <g
-         id="g1112-0-0-0-1-0-1"
-         transform="translate(69.153001,93.664093)">
-        <g
-           id="g1191-3-4-7-2-50"
-           transform="translate(-2.018413,1.3456087)">
-          <rect
-             style="fill:#0000ff;stroke:#0036fa;stroke-width:0.364266"
-             height="9.8519201"
-             id="rect184-2-9-6-5-18-6"
-             ry="0.034850162"
-             width="22.157198"
-             x="95.031029"
-             y="143.19164" />
-          <text
-             style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:none;stroke-width:1.013"
-             id="text398-4-8-0-5-7-5"
-             x="96.847511"
-             y="149.4276"
-             xml:space="preserve"><tspan
-               style="fill:#ffffff;stroke:none;stroke-width:1.013"
-               id="tspan396-8-6-3-4-1-3"
-               x="96.847511"
-               y="149.4276"
-               sodipodi:role="line">Module B</tspan></text>
-        </g>
+             sodipodi:role="line">Module B</tspan></text>
       </g>
     </g>
     <text
-       style="font-weight:bold;font-size:3.52777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;stroke:none;stroke-width:1.013;stroke-opacity:1"
-       id="text2509-0-2"
-       x="102.23955"
-       y="211.42125"
+       style="font-weight:bold;font-size:7.2639px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;stroke:none;stroke-width:2.08583;stroke-opacity:1"
+       id="text2509-0-2-3"
+       x="42.853519"
+       y="216.89865"
        xml:space="preserve"><tspan
-         style="stroke:none;stroke-width:1.013"
-         id="tspan2507-9-0"
-         x="102.23955"
-         y="211.42125"
+         style="stroke:none;stroke-width:2.08583"
+         id="tspan2507-9-0-2"
+         x="42.853519"
+         y="216.89865"
          sodipodi:role="line">Dependency FLow</tspan></text>
-    <path
-       style="fill:#ff00ff;fill-opacity:1;stroke:#000000;stroke-width:2.299;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-9-3-1-0)"
-       d="m 214.17594,229.32374 h 35.16137"
-       id="path20818" />
     <text
        style="font-weight:bold;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.299"
        id="text1720"
@@ -1701,5 +1429,23 @@
          x="47.987507"
          y="163.05211"
          sodipodi:role="line">.....</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:0.492683;stroke:#6a20ff;stroke-width:0.721836;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2253"
+       width="99.575974"
+       height="25.950932"
+       x="44.064415"
+       y="247.81618" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:5.04404px;font-family:'Apple Braille';-inkscape-font-specification:'Apple Braille Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.455751;stroke-dasharray:none;stroke-opacity:1"
+       x="57.624901"
+       y="253.56294"
+       id="text7672"><tspan
+         sodipodi:role="line"
+         id="tspan7670"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.455751"
+         x="57.624901"
+         y="253.56294">Ijectors</tspan></text>
   </g>
 </svg>
