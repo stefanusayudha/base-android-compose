@@ -6,7 +6,7 @@ This readme comes with another languages :
 Fitur utama masih di goreng.
 
  - [Modification Safe](https://github.com/stefanusayudha/base-android-compose/issues/40)
-   Kalian akan dapat meng clone proyek ini, mengganti package name dan nama proyek ini, dan tetap akan mendapatkan update codebase secara aman.
+   Kalian akan dapat meng clone proyek ini, mengganti package name dan nama proyek ini, dan tetap akan mendapatkan update codebase secara aman. Dan maaf mengenai deprekasi versi 1. Saya rasa saya melakukan kelasalahan dalam prosedur versioning, oleh karena itu saya memutuskan untuk membuat versi 2 sebagai base pengerjaan selanjutnya. Saya telah merubah package name sehingga kodebase ini menjadi lebih universal, langkah ini di perlukan dalam proses pembuatan tamplate builder yang sekarang ini sedang saya kerjakan dan saya berjanji tidak akan ada versi 3 untuk waktu dekat ini.
 
 Pastikan anda follow proyek ini untuk mendapatkan pemberitahuan updatenya.
 
