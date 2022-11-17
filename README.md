@@ -16,12 +16,12 @@ Sebelumnya saya ingin mengucapkan terimakasih dan apresiasi untuk para kontribut
  - **Joseph Sanjaya** (meet: [joseph](https://github.com/JosephSanjaya)). Original desing dari Konsep dan Terminologi Navigasi yang luarbiasa dalam codebase ini.
  
 # FREE TO USE
-Anda dapat menggunakan codebase ini sebagai basis proyek anda dan memodifikasinya untuk keperluan proyek anda. Saya membuat codebase ini dengan harapan dapat membantu siappun untuk memulai proyek skala besar. Saya berterimakasih untuk siapapun yang menggunakan codebase ini, dikarenakan dengan menggunakan codebase ini, anda turut berkontribusi untuk melakukan pengujian dalam codebase ini. Saya berharap dengan banyaknya penguna dan masukan dari pengguna akan bisa menghasilkan masukan untuk mengembangkan codebase ini menjadi lebih robust dan lebih baik lagi. Saya juga akan sangat senang untuk menerima masukan dan kontribusi dari anda.
+Anda dapat menggunakan codebase ini sebagai basis proyek anda dan memodifikasinya sesuai kebutuhan proyek anda. Saya membuat codebase ini, dengan harapan codebase ini bisa membantu siapa saja untuk memulai proyek mereka, terutama proyek berskala besar. Saya berterimakasih kepada siapa saja yang menggunakan codebase ini sebagai basis proyek mereka, dikarenakan dengan menggunakan codebase ini, anda turut berkontribusi membantu saya dalam menguji codebase ini. Saya harap dengan lebih banyak orang yang menggunakan codebase ini, akan bisa memberikan input dan masukan atau saran untuk membantu saya mengambangkan codebase ini. Untuk membuat codebase ini menjadi lebih baik dan robust. Saya juga akan sangat merasa senang untuk menerima saran, ide, maupun kontribusi dari anda sekalian untuk proyek ini.
 
 # Welcome to My Codebase Design!
-Untuk mengukur seberapa baik sebuah arsitektur, kita membutuhkan base line (Standar minimum) dan sebuah alat untuk mengukur. Base tersebut adalah **Alur Dependensi dan Alur Kerja** dan alat ukur tersebut adalah **Prinsib-prinsib pembuatan software**. Arsitektur software adalah tentang Flow Dependensi dan Flow Runtime. Hal-hal selain itu adalah preferensi.
+Untuk mengukur sesuatu, kita memerlukan sebuah base line dan alat ukur, begitu juga untuk sebuah arsitektur software. Baseline tersebut adalah **Alur Dependensi** dan **Alur Kerja**, sementara alat ukurnya adalah Prinsib-prinsib pembuatan Software. Seberapa robust sebuath software dapat diukur dari seberapa banyak Prinsib-prinsib pembuatan Software yang diaplikasikan ke dalamnya. Selain dari pada itu adalah preferensi.
 
-Disini kita akan "**Back to Basic**" dengan konsern sepenuhnya pada **Flow dependensi** dan **Flow runtime**.
+Disini kita akan "**Back to Basic**" dengan berfokus sepenuhnya pada **Alur Dependensi** dan **Alur Kerja**.
 
 Saya memiliki prinsib sederhana; "Jika sulit berarti salah". Jadi kita akan membuatnya sedikit lebih mudah dengan menghadirkan sebuah module baru pada gradle project ,yaitu : **Provider** dan **Igniter**.
 
@@ -32,9 +32,8 @@ Ide utama dari proyek ini adalah:
 
 # Project Arsitektur
 Projek arsitektur mencakup keseluruhan arsitektur dari gradle project kita. Tidak segala hal bisa kita lakukan dengan gradle project akan tetapi **Pengecualian adalah hal yang buruk** jika kita tidak membatasinya. Jadi kita akan membatasi pengecualian tersebut hanya 2 hal.
-1. App Module adalah bagian dari Igniter. Sehingga App Module dapat berperilaku seperti Igniter  
-   module, akan tetapi tidak boleh memprovide Module apapun sebagaimana module Igniter.
-2. Straight dependensi ke Core Module.
+1. App Module adalah bagian dari Igniter Module. Sehingga dia berperilaku seperti halnya Igniter Module. Igniter akan menginjeksikan module-module kedalam Application class, sementara App module mendeklarasikan Intent kedalam manifest.
+2. Straight dependensi ke Core Module. Karena komponen Core Module sangat banyak dan kecil-kecil, akan terlalu sulit untuk menerapkan dependensi injection padanya. Oleh karena itu kita akan bergantung langsung pada Core Module akan tetapi tetap harus melalui Provider Module.
 
 **Circular dependensi** terjadi dikarenakan kita mengizinkan "**Horizontal Dependency**". Jadi kita tidak akan mengijinkan adanya Horizontal dependensi dalam design architecture ini.
 1. Sebuah module tidak boleh depend ke module lain kecuali Provider.
@@ -49,7 +48,7 @@ graph LR
 A[Module 1] -- payload --> B((Provider)) -- payload --> C[Module 2]  
 ```  
 
-Setiap module bisa memanggil module lain melalui kontrak yang sudah dideklarasikan di dalam Provider. Selanjutnya, **Igniter** akan memprovide module berdasarkan kontrak yang di inginkan, dan **Module 1** tidak perlu tau dari mana dia mendapatkan **Module 2** tersebut. Tentusaja sebuah module harus memprovide atau meng-injeksikan module tersebut ke **Igniter** sebelumnya, untuk kemudian module tersebut dapat ditemukan oleh **Provider**.
+Setiap module dapat berinteraksi dengan module lain melalui kontrak yang sudah dideklarasikan pada Provider Module. Tentu saja module tersebut sebelumnya harus diregistrasikan kedalam **Igniter Module**.
 
 ### Dependency Flow
 ```mermaid  
@@ -63,7 +62,7 @@ B --> E{{Core}}
 Seluruh module (yang masuk dalam kategori runtime module) hanya depend ke 1 Module, yakni Provider Module. Sementara Provider Module depend ke **Core Module**. Dalam arsitektur ini **Core Module** adalah sebuah pengecualian, dikarenakan Core Module memiliki sangat banyak komponent dan kebanyakan berukuran sangat kecil. Oleh Karena itu, akan jauh lebih mudah jika semua module yang membutuhkan core **"Straight Depend" ke Core Module**, dan semua module tetap harus **mengakses Core Module melalui Provider**.
 
 ## Igniter
-Sebagaimana namanya, Igniter adalah sebuah module yang bertugas untuk menjadi sumbu api. Igniter perlu depend ke semua module, dan **meng-interaksikan** Module-module, API, Widget dll, yang diprovide setiap Module.
+Sebagaimana namanya, Igniter adalah sebuah module yang bertugas untuk menjadi sumbu api. Igniter perlu depend ke semua module, mengikatnya bersama-sama dan meng-injeksikannya ke dalam Application Class.
 
 **Application** perlu **diprovide oleh Igniter**. Dan Igniter perlu menghubungkan seluruh Module ke satu sumbu api dalam Application class.
 
@@ -71,14 +70,16 @@ Sebagaimana namanya, Igniter adalah sebuah module yang bertugas untuk menjadi su
 Anda bisa melihat overview arsitektur pada file [arsitektur-overview.pdf](arsitektur-overview.pdf)
 
 # Internal Module Arsitektur
-Kita mengenal MVVM , Clean Architectur, tapi apakah aplikasi front-end perlu se rumit itu? Menurut saya, Tidak.
-
-Sebagai front-end developer, saya tidak pernah menemukan kemungkinan yang begitu rumit.
+Kita mengenal MVVM , Clean Architectur, SOLID, tapi apakah aplikasi front-end perlu se rumit itu? Sebagai frontend developer, saya belum pernah menemukan kasus yang amat kompleks yang sepadan dengan semua effort itu.
 
 Aplikasi front-end hanya terdiri dari 2 hal yakni **UI** dan **Data**.
 
 ## UI
-UI adalah module level tinggi, penuh dengan side-effect, lifecycle, configuration changes dan lain sebagainya. Module ini memang cukup rumit, oleh karena itu, prinsib SOLID dan Dependency injection akan sangat membantu kita. Tidak ada hal yang istimewa yang perlu saya sampaikan, gunakan ViewModel dan Injector seperti Koin atau Dagger.
+UI adalah module level tinggi, penuh dengan side-effect, lifecycle, configuration changes dan lain sebagainya. Module ini memang cukup rumit, oleh karena itu, prinsib SOLID dan Dependency injection akan sangat membantu kita. Tidak ada hal yang istimewa yang perlu saya sampaikan, akan tetapi ada satu hal:
+
+># THINK STATELESS
+
+Buat segalanya stateless jika memungkinkan. Jangan membuat apapun yang memiliki internal state.
 
 **Note**: Sekalipun UI penuh dengan side effect, kita tidak boleh hanya memakluminya. Melainkan kita harus sebisa mungkin menghilangkannya. Dalam pemrograman android imperativ, saya biasanya hanya mengijinkan side effect terjadi di Controller (Fragment atau Activity class).
 1. Tidak boleh ada side effect dimanapun selain pada controller module (Fragment Activity, Service dll). Misalnya saja sekalipun viewmodel dan adapter termasuk di dalam presentation module, mereka tidak boleh melakukan side effect karena tidak termasuk ke dalam kategori Controller Class.
