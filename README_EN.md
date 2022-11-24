@@ -113,6 +113,7 @@ Pure Function Approach:
 >4. Function duty is only change an input into an output. For example; an Integer into a String, or a Payload into a Data, or Error if the process cannot be fulfilled.
 3. This approach requires the same output for the same given input, means that if we expect a different output, we should provide different input. Example case; if there is changes in the business logic; In the simple way, for every different business logic we shall provides different payload. Or in another way, we don't have such concept "a business process change", rather we consider it as "a new business process".
  We don't change the business process, but we scale the business process by providing new Pure Function and new Payload for every new business process.
+4. No more Interface Segregation. Imagine a factory object that implements so many UseCases, so it is become very bulky, while all we need is only 1 API. It is so unefficient to build the whole object only to use one API. This is always be a dilema between good practices and memory management. But with Pure Function Approach, there is no more worries. For any problem, all you need is just a (new/existing) Function.
 
 # Contributing
 I would love to have contributors, and i do open this project for contributor. But for now i still making the procedure's files like Gitflow and else, so if you are interesting to make contribution, you can DM me. You can find me at the Author section bellow.
