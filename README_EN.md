@@ -100,7 +100,7 @@ In this project example, Data Modules are not obeying the SOLID principles. But 
 4. Since they no longer have states, rather than using dependency inversion we will use monoid chain instead, it is way more simpler.
 
 ## There is no Domain Layers
-For the professionals, this might be consider a taboo. But i do in purpose as an experiment, since this approach is one of the purpose why i built this code base. But don't be worried, feel free to do what you want.
+For the professionals, this might be consider a taboo. But i do this in purpose as an experiment, since this approach is one of the purpose why i built this code base. But don't be worried, feel free to do what you want.
 
 I removed the domain layers by purpose to maximize the **Pure Function** approach in the Data Layers.
 
