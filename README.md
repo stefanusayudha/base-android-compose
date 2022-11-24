@@ -101,7 +101,7 @@ Untuk profesional programmer mungkin akan merasa bahwa ini adalah hal yang tabu 
 
 Domain layer sengaja dihapuskan untuk memaksimalkan pendekatan **Pure Function** pada data layer.
 
-Pendekatan **Pure Function**;
+## Pendekatan **Pure Function**;
 1. Setiap fungsi pada data layer haruslah sebuah **pure function** atau **suspended pure function**.
 2. Pure function harus memenuhi persyaratan;
 >1. Input yang sama harus mengasilkan output yang sama.
