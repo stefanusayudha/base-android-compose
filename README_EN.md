@@ -104,7 +104,7 @@ For the professionals, this might be consider a taboo. But i do in purpose as an
 
 I removed the domain layers by purpose to maximize the **Pure Function** approach in the Data Layers.
 
-Pure Function Approach:
+## Pure Function Approach:
 1. Every functions in Data Layer should be **Pure Functions** or **Suspended Pure Functions**.
 2. Pure Function should obey these criteria:
 >1. Same output for the same input.
