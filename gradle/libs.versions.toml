@@ -27,7 +27,7 @@ custom-view-pooling-container = "1.0.0"
 accompanist = "0.23.0"
 
 ## arrow
-arrow = "1.0.1"
+arrow = "1.1.4-alpha.17"
 
 ## injection koin
 koin = "3.1.5"

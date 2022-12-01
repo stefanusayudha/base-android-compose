@@ -5,7 +5,7 @@
 package com.singularity_code.core.common.util.viewmodel.state
 
 import androidx.compose.runtime.Composable
-import com.singularity_code.core.common.data.model.Error
+import com.singularity_code.core.common.data.model.VmError
 import com.singularity_code.core.common.util.request.Default
 import com.singularity_code.core.common.util.request.Failed
 import com.singularity_code.core.common.util.request.Loading
@@ -21,7 +21,7 @@ import com.singularity_code.core.common.util.viewmodel.BaseViewModel
 fun <T, R> BaseViewModel.State<T, *>.mapState(
     default: () -> R,
     loading: () -> R,
-    failed: (e: Error) -> R,
+    failed: (e: VmError) -> R,
     success: (d: T) -> R
 ): R {
     return when (val v = value()) {
@@ -41,7 +41,7 @@ fun <T, R> BaseViewModel.State<T, *>.mapState(
 fun <T> BaseViewModel.State<T, *>.onState(
     default: @Composable () -> Unit,
     loading: @Composable () -> Unit,
-    failed: @Composable (e: Error) -> Unit,
+    failed: @Composable (e: VmError) -> Unit,
     success: @Composable (d: T) -> Unit,
 ) {
     return when (val v = value()) {

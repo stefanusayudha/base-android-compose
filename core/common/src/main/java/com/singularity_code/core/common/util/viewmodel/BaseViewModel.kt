@@ -8,10 +8,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.singularity_code.core.common.data.model.Error
+import arrow.core.Either
+import com.singularity_code.core.common.data.model.VmError
 import com.singularity_code.core.common.data.payload.Payload
 import com.singularity_code.core.common.util.request.*
-import com.singularity_code.core.common.util.retrofit.eitherResponseOf
 import com.singularity_code.core.common.util.viewmodel.state.StateUseCase
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -42,7 +42,7 @@ abstract class BaseViewModel : ViewModel(), BaseViewModelUseCase {
                     + Dispatchers.IO
                     + handler { c, e ->
                 state.value = Failed(
-                    Error(
+                    VmError(
                         message = e.message.toString(),
                         code = 0
                     )
@@ -66,14 +66,14 @@ abstract class BaseViewModel : ViewModel(), BaseViewModelUseCase {
                         Dispatchers.IO +
                         handler { c, e ->
                             state.value = Failed(
-                                Error(
+                                VmError(
                                     message = e.message.toString(),
                                     code = 0
                                 )
                             )
                         }
             ) {
-                state.value = eitherResponseOf { operator(payload) }.fold(
+                state.value = operator(payload).fold(
                     ifLeft = { Failed(it) },
                     ifRight = { Success(it) }
                 )
@@ -94,14 +94,14 @@ abstract class BaseViewModel : ViewModel(), BaseViewModelUseCase {
          * Operator will handle state update request
          * @param payload : Payload.
          */
-        abstract override val operator: suspend (payload: P) -> T
+        abstract override val operator: suspend (payload: P) -> Either<VmError, T>
     }
 
     override fun <P : Payload, T> createState(
-        block: suspend (payload: P) -> T
+        block: suspend (payload: P) -> Either<VmError, T>
     ): BaseViewModel.State<T, P> {
         return object : State<T, P>() {
-            override val operator: suspend (payload: P) -> T
+            override val operator: suspend (payload: P) -> Either<VmError, T>
                 get() = { block.invoke(it) }
         }
     }
