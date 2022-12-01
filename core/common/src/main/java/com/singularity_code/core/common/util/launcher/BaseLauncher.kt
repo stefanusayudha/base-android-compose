@@ -19,18 +19,27 @@ abstract class BaseLauncher<P : JsonConvertAble, O>
 
     override fun createIntent(context: Context, input: P): Intent {
         return with(intent.invoke(context)) {
-            putExtra(ActivityResultEmitter.KEY.PAYLOAD.name, input.toStringJSON())
+            putExtra(
+                ActivityResultEmitter.KEY.PAYLOAD.name,
+                input.toStringJSON()
+            )
             this
         }
     }
 
     override fun parseResult(resultCode: Int, intent: Intent?): O? {
-        return if (resultCode == Activity.RESULT_OK) intent?.getStringExtra(ActivityResultEmitter.KEY.RESULT.name)
-            ?.toObject(outputType)
-            ?: run {
-                // TODO: firebase crash analytic here
-                throw NullPointerException()
-            }
+        return if (resultCode == Activity.RESULT_OK)
+            intent
+                ?.getStringExtra(
+                    ActivityResultEmitter.KEY.RESULT.name
+                )
+                ?.toObject(
+                    outputType
+                )
+                ?: run {
+                    // TODO: firebase crash analytic here
+                    throw NullPointerException()
+                }
         else null
     }
 }

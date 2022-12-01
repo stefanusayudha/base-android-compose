@@ -4,8 +4,7 @@
 package com.singularity_code.core.common.util.retrofit
 
 import androidx.annotation.NonNull
-import arrow.core.Either
-import com.singularity_code.core.common.data.model.Error
+import arrow.retrofit.adapter.either.EitherCallAdapterFactory
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -26,31 +25,7 @@ fun <I> createRetrofitService(
 ): I = Retrofit.Builder()
     .client(httpClient)
     .baseUrl(baseUrl)
-    .addCallAdapterFactory(SynchronousCallAdapterFactory())
+    .addCallAdapterFactory(EitherCallAdapterFactory())
     .addConverterFactory(GsonConverterFactory.create())
     .build()
     .create(service)
-
-// FIXME: use this to map the response to Either<Error, T> since the EitherCallAdapterFactory is not yet ready
-suspend fun <T> eitherResponseOf(block: suspend () -> T): Either<Error, T> = try {
-    Either.Right(block.invoke())
-} catch (e: Throwable) {
-    Either.Left(
-        Error(
-            message = e.message.toString(),
-            code = 0
-        )
-    )
-}
-
-// Monoid version of above responseToEither
-fun <T> (() -> T).toEither(): Either<Error, T> = try {
-    Either.Right(this.invoke())
-} catch (e: Throwable) {
-    Either.Left(
-        Error(
-            message = e.message.toString(),
-            code = 0
-        )
-    )
-}

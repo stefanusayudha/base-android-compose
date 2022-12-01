@@ -9,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.singularity_code.core.common.data.model.VmError
 import com.singularity_code.core.common.util.viewmodel.state.onState
 import com.singularity_code.core.network.GetPokemonListQuery
 import com.singularity_code.core.ui.util.toDp
@@ -82,7 +83,7 @@ fun SuccessPage(
 
 @Composable
 fun Error(
-    e: com.singularity_code.core.common.data.model.Error
+    e: VmError
 ) {
     Text(text = e.message.toString())
 }

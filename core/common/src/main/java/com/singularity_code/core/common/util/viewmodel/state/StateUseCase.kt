@@ -5,6 +5,8 @@ package com.singularity_code.core.common.util.viewmodel.state
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
+import arrow.core.Either
+import com.singularity_code.core.common.data.model.VmError
 import com.singularity_code.core.common.data.payload.Payload
 import com.singularity_code.core.common.util.request.RequestState
 
@@ -14,5 +16,5 @@ interface StateUseCase<T, P : Payload> {
     fun requestUpdate(payload: P)
     fun request(payload: P)
     fun resetClear()
-    val operator: suspend (payload: P) -> T
+    val operator: suspend (payload: P) -> Either<VmError, T>
 }
