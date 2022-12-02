@@ -8,7 +8,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.lifecycle.lifecycleScope
-import com.singularity_code.core.common.util.handler.BackPressHandlerProvider
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
@@ -47,9 +46,4 @@ abstract class BaseActivity : ComponentActivity(), BaseActivityUseCase {
     }
 
     abstract val content: @Composable () -> Unit
-
-    final override fun onBackPressed() {
-        BackPressHandlerProvider.getActiveHandler()?.onBackPress()
-            ?: super.onBackPressed()
-    }
 }
