@@ -10,33 +10,61 @@ import org.gradle.api.Project
 import java.io.FileInputStream
 import java.util.*
 
+/**
+ * ## Default Config
+ */
+const val MIN_SDK = 32
+const val TARGET_SDK = 32
+const val COMPILE_SDK = 33
+
+/**
+ * ## Util
+ */
 val Project.android: BaseExtension
     get() = extensions.findByName("android") as? BaseExtension
         ?: error("Project '$name' is not an Android module")
 
+/**
+ * Use to define application configuration
+ */
 fun Project.defaultAppConfig(
     appId: String,
     versionCode: Int = 1,
     versionName: String = "1.0",
-    keystoreProperties: Properties? = null
+    keystoreProperties: Properties? = null,
+    minSdk: Int = MIN_SDK,
+    targetSdk: Int = TARGET_SDK,
+    compileSdk: Int = COMPILE_SDK,
 ) {
     defaultConfigBuilder(
         appId = appId,
         verCode = versionCode,
         verName = versionName,
-        keystoreProperties = keystoreProperties
+        keystoreProperties = keystoreProperties,
+        minSdk = minSdk,
+        targetSdk = targetSdk,
+        compileSdk = compileSdk
     )
 }
 
+/**
+ * Use to define library configuration
+ */
 fun Project.defaultLibraryConfig(
     versionCode: Int = 1,
     versionName: String = "1.0",
-    keystoreProperties: Properties? = null
+    keystoreProperties: Properties? = null,
+    minSdk: Int = MIN_SDK,
+    targetSdk: Int = TARGET_SDK,
+    compileSdk: Int = COMPILE_SDK,
 ) {
     defaultConfigBuilder(
         verCode = versionCode,
         verName = versionName,
-        keystoreProperties = keystoreProperties
+        keystoreProperties = keystoreProperties,
+        minSdk = minSdk,
+        targetSdk = targetSdk,
+        compileSdk = compileSdk
     )
 }
 
@@ -44,16 +72,19 @@ private fun Project.defaultConfigBuilder(
     appId: String? = null,
     verCode: Int,
     verName: String,
-    keystoreProperties: Properties? = null
+    keystoreProperties: Properties? = null,
+    minSdk: Int,
+    targetSdk: Int,
+    compileSdk: Int,
 ) {
     android.apply {
-        compileSdkVersion(33)
+        compileSdkVersion(compileSdk)
         defaultConfig {
             if (appId.isNullOrBlank().not())
                 applicationId = appId
 
-            minSdk = 28
-            targetSdk = 32
+            this.minSdk = minSdk
+            this.targetSdk = targetSdk
             versionCode = verCode
             versionName = verName
 
