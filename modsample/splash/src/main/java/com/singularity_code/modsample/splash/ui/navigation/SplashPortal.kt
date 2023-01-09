@@ -3,7 +3,7 @@ package com.singularity_code.modsample.splash.ui.navigation
 import com.singularity_code.control.provider.sample.mmdexample.MMDExampleSpace
 import com.singularity_code.control.provider.sample.pokemon.PokemonSpace
 import com.singularity_code.control.provider.sample.todolist.TodoSpace
-import com.singularity_code.core.common.util.navigation.Launcher
+import com.singularity_code.core.common.util.Launcher
 
 interface SplashPortal {
     val todoLauncher: Launcher<TodoSpace, TodoSpace.Pld, TodoSpace.Result>

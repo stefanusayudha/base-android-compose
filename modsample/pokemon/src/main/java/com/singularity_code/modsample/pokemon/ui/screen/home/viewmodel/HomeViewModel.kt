@@ -1,7 +1,7 @@
 package com.singularity_code.modsample.pokemon.ui.screen.home.viewmodel
 
-import com.singularity_code.core.common.util.viewmodel.BaseViewModel
-import com.singularity_code.core.common.util.viewmodel.createStateHolder
+import com.singularity_code.core.common.pattern.viewmodel.BaseViewModel
+import com.singularity_code.core.common.pattern.viewmodel.createStateHolder
 import com.singularity_code.core.network.GetPokemonListQuery
 import com.singularity_code.modsample.pokemon.data.getPokemonList
 import com.singularity_code.modsample.pokemon.data.payload.GPLPLD

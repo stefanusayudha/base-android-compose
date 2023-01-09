@@ -16,7 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.singularity_code.core.common.util.viewmodel.state.onState
+import com.singularity_code.core.common.pattern.viewmodel.state.onState
 import com.singularity_code.core.ui.util.toDp
 import com.singularity_code.modsample.todolist.data.model.TDMDL
 import com.singularity_code.modsample.todolist.data.payload.GetTodoListPld

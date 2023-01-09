@@ -1,6 +1,6 @@
 package com.singularity_code.modsample.todolist.data.payload
 
-import com.singularity_code.core.common.data.payload.Payload
+import com.singularity_code.core.common.pattern.Payload
 
 data class GetTodoListPld(
     val id: String = ""

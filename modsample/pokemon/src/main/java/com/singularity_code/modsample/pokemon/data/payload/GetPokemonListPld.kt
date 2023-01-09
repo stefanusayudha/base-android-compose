@@ -1,6 +1,6 @@
 package com.singularity_code.modsample.pokemon.data.payload
 
-import com.singularity_code.core.common.data.payload.Payload
+import com.singularity_code.core.common.pattern.Payload
 
 /**
  * sort for GetPokemonListPld

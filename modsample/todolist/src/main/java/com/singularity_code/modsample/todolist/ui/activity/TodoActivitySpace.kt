@@ -1,7 +1,7 @@
 package com.singularity_code.modsample.todolist.ui.activity
 
 import com.singularity_code.control.provider.sample.todolist.TodoSpace
-import com.singularity_code.core.common.util.launcher.createLauncher
+import com.singularity_code.core.common.util.createLauncher
 
 class TodoActivitySpace() : TodoSpace {
     override fun getLauncher() =
