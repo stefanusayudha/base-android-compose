@@ -1,7 +1,7 @@
 package com.singularity_code.modsample.todolist.ui.screen.viewmodel
 
-import com.singularity_code.core.common.util.viewmodel.BaseViewModel
-import com.singularity_code.core.common.util.viewmodel.createStateHolder
+import com.singularity_code.core.common.pattern.viewmodel.BaseViewModel
+import com.singularity_code.core.common.pattern.viewmodel.createStateHolder
 import com.singularity_code.modsample.todolist.data.getTodoList
 import com.singularity_code.modsample.todolist.data.model.TDMDL
 import com.singularity_code.modsample.todolist.data.payload.GetTodoListPld

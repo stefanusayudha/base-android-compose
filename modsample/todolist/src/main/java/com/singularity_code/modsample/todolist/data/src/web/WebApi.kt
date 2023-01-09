@@ -1,7 +1,7 @@
 package com.singularity_code.modsample.todolist.data.src.web
 
 import arrow.retrofit.adapter.either.ResponseE
-import com.singularity_code.core.common.util.retrofit.createRetrofitService
+import com.singularity_code.core.common.util.createRetrofitService
 import com.singularity_code.core.network.data.Secured
 import com.singularity_code.core.network.util.defaultOkhttp
 import com.singularity_code.modsample.todolist.data.model.TDMDL

@@ -3,10 +3,10 @@ package com.singularity_code.control.provider.sample.pokemon
 import arrow.core.Either
 import com.singularity_code.control.provider.sample.pokemon.model.PDMDL
 import com.singularity_code.control.provider.sample.pokemon.payload.GPBIPLD
-import com.singularity_code.core.common.data.model.VmError
-import com.singularity_code.core.common.util.navigation.BaseSpaceStation
+import com.singularity_code.core.common.pattern.VmError
+import com.singularity_code.core.common.pattern.navigation.SpaceStation
 
-interface PokemonSpaceStation : BaseSpaceStation {
+interface PokemonSpaceStation : SpaceStation {
     suspend fun getPokemonById(
         payload: GPBIPLD
     ): Either<VmError, PDMDL>

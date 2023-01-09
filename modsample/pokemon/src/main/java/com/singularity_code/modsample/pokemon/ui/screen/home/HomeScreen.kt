@@ -9,8 +9,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.singularity_code.core.common.data.model.VmError
-import com.singularity_code.core.common.util.viewmodel.state.onState
+import com.singularity_code.core.common.pattern.VmError
+import com.singularity_code.core.common.pattern.viewmodel.state.onState
 import com.singularity_code.core.network.GetPokemonListQuery
 import com.singularity_code.core.ui.util.toDp
 import com.singularity_code.modsample.pokemon.ui.screen.home.viewmodel.HomeViewModel
