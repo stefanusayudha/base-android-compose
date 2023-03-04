@@ -13,7 +13,9 @@ fun ContentThemeWrapper(
     forceDark: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
-    BaseComposeTheme {
+    BaseComposeTheme(
+        darkTheme = forceDark
+    ) {
         // A surface container using the 'background' color from the theme
         Surface(
             modifier = modifier,
