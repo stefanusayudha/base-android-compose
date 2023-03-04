@@ -5,6 +5,8 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.ArrowForward
 import androidx.compose.material3.Button
+import androidx.compose.material3.Card
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -27,60 +29,72 @@ fun SplashScreen(
     modifier: Modifier = Modifier
 ) = Box(
     modifier = Modifier
-        .fillMaxSize()
-        .then(modifier)
         .padding(16.toDp)
+        .fillMaxSize()
 ) {
-
-    Column(
-        horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier.align(
-            Alignment.BottomCenter
-        )
+    Card(
+        modifier = Modifier
+            .height(200.toDp)
+            .align(Alignment.BottomCenter)
     ) {
-
-        ArrowButton(
-            text = "Go to Todo List"
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .then(modifier)
+                .padding(16.toDp)
         ) {
-            portal?.goToTodoList(
-                TodoSpace.Pld()
+
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier.align(
+                    Alignment.BottomCenter
+                )
             ) {
-                logDebug("Back from Todo List trip $it")
+
+                ArrowButton(
+                    text = "Go to Todo List"
+                ) {
+                    portal?.goToTodoList(
+                        TodoSpace.Pld()
+                    ) {
+                        logDebug("Back from Todo List trip $it")
+                    }
+                }
+
+                Spacer(
+                    modifier = Modifier
+                        .height(16.toDp)
+                )
+
+                ArrowButton(
+                    text = "Go to Pokemon Home"
+                ) {
+                    portal?.goToPokemonHome(
+                        PokemonSpace.Pld()
+                    ) {
+                        logDebug("Back from Pokemon trip $it")
+                    }
+                }
+
+                Spacer(
+                    modifier = Modifier
+                        .height(16.toDp)
+                )
+
+                ArrowButton(
+                    text = "Go to MMD Example"
+                ) {
+                    portal?.goToMMDExample(
+                        MMDExampleSpace.Pld()
+                    )
+                }
+
+                Spacer(
+                    modifier = Modifier
+                        .height(16.toDp)
+                )
             }
         }
-
-        Spacer(
-            modifier = Modifier
-                .height(16.toDp)
-        )
-
-        ArrowButton(
-            text = "Go to Pokemon Home"
-        ) {
-            portal?.goToPokemonHome(
-                PokemonSpace.Pld()
-            ) {
-                logDebug("Back from Pokemon trip $it")
-            }
-        }
-
-        Spacer(
-            modifier = Modifier
-                .height(16.toDp)
-        )
-
-        ArrowButton(
-            text = "Go to MMD Example"
-        ) {
-            portal?.goToMMDExample(
-                MMDExampleSpace.Pld()
-            )
-        }
-
-        Spacer(
-            modifier = Modifier
-                .height(16.toDp)
-        )
     }
 }
 
@@ -104,7 +118,7 @@ fun ArrowButton(
             imageVector = Icons.Rounded.ArrowForward,
             contentDescription = "Navigate",
             colorFilter = ColorFilter.tint(
-                color = Color.White
+                color = MaterialTheme.colorScheme.onPrimary
             )
         )
     }

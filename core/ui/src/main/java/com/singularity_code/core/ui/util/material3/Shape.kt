@@ -1,4 +1,4 @@
-package com.singularity_code.core.ui.theme
+package com.singularity_code.core.ui.util.material3
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 

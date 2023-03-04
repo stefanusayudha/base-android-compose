@@ -1,4 +1,4 @@
-package com.singularity_code.core.ui.theme
+package com.singularity_code.core.ui.util.material3
 
 import com.singularity_code.core.ui.util.toDp
 import com.singularity_code.core.ui.util.toSp
