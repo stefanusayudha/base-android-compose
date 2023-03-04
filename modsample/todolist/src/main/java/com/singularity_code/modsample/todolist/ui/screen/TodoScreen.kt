@@ -5,10 +5,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Button
-import androidx.compose.material3.Card
-import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.Text
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -17,6 +14,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.singularity_code.core.common.util.onState
+import com.singularity_code.core.ui.theme.ContentThemeWrapper
 import com.singularity_code.core.ui.util.toDp
 import com.singularity_code.modsample.todolist.data.model.TDMDL
 import com.singularity_code.modsample.todolist.data.payload.GetTodoListPld
@@ -111,19 +109,22 @@ fun ListItem(
     modifier = Modifier
         .padding(16.toDp, 16.toDp, 16.toDp, 0.toDp)
 ) {
-    Box(
+    Card(
         modifier = Modifier
             .fillMaxWidth()
-            .background(Color.Cyan)
             .padding(8.toDp)
             .height(50.toDp)
     ) {
-        Text(
-            modifier = Modifier
-                .align(Alignment.Center),
-            text = "${item.title}",
-            textAlign = TextAlign.Center
-        )
+        Box(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            Text(
+                modifier = Modifier
+                    .align(Alignment.Center),
+                text = "${item.title}",
+                textAlign = TextAlign.Center
+            )
+        }
     }
 }
 
@@ -154,13 +155,19 @@ fun DownloadButton(
 @Composable
 @Preview(showSystemUi = true)
 fun Preview() {
-    TodoScreen()
+    ContentThemeWrapper() {
+        TodoScreen()
+    }
 }
 
 @Composable
 @Preview(showSystemUi = false)
 fun ListPreview() {
-    Box {
-        ListContent(list = TDMDL.MOCK_LIST)
+    ContentThemeWrapper(
+        forceDark = true
+    ) {
+        Box {
+            ListContent(list = TDMDL.MOCK_LIST)
+        }
     }
 }
