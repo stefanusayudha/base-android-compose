@@ -6,8 +6,7 @@ package com.singularity_code.core.common.util
 import android.widget.Toast.makeText
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
-import com.singularity_code.core.common.pattern.Toast
-
+import com.singularity_code.core.common.model.Toast
 
 @Composable
 fun MakeToast(payload: Toast) = makeText(

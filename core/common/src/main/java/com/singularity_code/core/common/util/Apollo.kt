@@ -7,7 +7,7 @@ package com.singularity_code.core.common.util
 import arrow.core.Either
 import com.apollographql.apollo3.ApolloCall
 import com.apollographql.apollo3.api.Operation
-import com.singularity_code.core.common.pattern.VmError
+import com.singularity_code.core.common.model.VmError
 
 
 suspend fun <T : Operation.Data> ApolloCall<T>.getOrError()

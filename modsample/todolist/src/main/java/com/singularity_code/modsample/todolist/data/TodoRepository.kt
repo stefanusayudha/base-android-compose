@@ -1,7 +1,7 @@
 package com.singularity_code.modsample.todolist.data
 
 import arrow.core.Either
-import com.singularity_code.core.common.pattern.VmError
+import com.singularity_code.core.common.model.VmError
 import com.singularity_code.modsample.todolist.data.model.TDMDL
 import com.singularity_code.modsample.todolist.data.payload.GetTodoByIdPld
 import com.singularity_code.modsample.todolist.data.payload.GetTodoListPld

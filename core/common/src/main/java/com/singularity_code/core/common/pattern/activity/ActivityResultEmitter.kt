@@ -1,12 +1,13 @@
 /*
  * Copyright (c) 2022. Stefanus Ayudha.
  */
-package com.singularity_code.core.common.pattern
+package com.singularity_code.core.common.pattern.activity
 
 import android.app.Activity
 import androidx.activity.ComponentActivity
+import com.singularity_code.core.common.pattern.JsonConvertible
 
-interface ActivityResultEmitter<O : JsonConvertAble> {
+interface ActivityResultEmitter<O : JsonConvertible> {
     enum class KEY {
         PAYLOAD,
         RESULT

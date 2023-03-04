@@ -1,14 +1,16 @@
 /*
  * Copyright (c) 2022. Stefanus Ayudha.
  */
-package com.singularity_code.core.common.pattern
+package com.singularity_code.core.common.pattern.activity
 
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import androidx.activity.result.contract.ActivityResultContract
+import com.singularity_code.core.common.pattern.JsonConvertible
+import com.singularity_code.core.common.util.toObject
 
-abstract class BaseLauncher<P : JsonConvertAble, O>
+abstract class LauncherAbs<P : JsonConvertible, O>
     : ActivityResultContract<P, O?>() {
 
     abstract val intent: (c: Context) -> Intent

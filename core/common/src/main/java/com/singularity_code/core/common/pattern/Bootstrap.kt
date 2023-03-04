@@ -3,7 +3,7 @@
  */
 package com.singularity_code.core.common.pattern
 
-interface BootstrapUseCase {
+interface Bootstrap {
     fun initData()
     fun initUI()
     fun initAction()

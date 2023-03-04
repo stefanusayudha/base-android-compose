@@ -3,6 +3,6 @@
  */
 package com.singularity_code.core.common.pattern.navigation
 
-interface BasicNavigationUseCase {
+interface BaseNavigation {
     fun goBack()
 }

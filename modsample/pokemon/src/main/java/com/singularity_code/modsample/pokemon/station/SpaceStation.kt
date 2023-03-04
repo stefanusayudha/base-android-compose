@@ -4,7 +4,7 @@ import arrow.core.Either
 import com.singularity_code.control.provider.sample.pokemon.PokemonSpaceStation
 import com.singularity_code.control.provider.sample.pokemon.model.PDMDL
 import com.singularity_code.control.provider.sample.pokemon.payload.GPBIPLD
-import com.singularity_code.core.common.pattern.VmError
+import com.singularity_code.core.common.model.VmError
 
 class SpaceStation : PokemonSpaceStation {
     override suspend fun getPokemonById(

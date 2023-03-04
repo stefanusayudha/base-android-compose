@@ -7,7 +7,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.singularity_code.core.common.pattern.viewmodel.state.mapState
+import com.singularity_code.core.common.util.mapState
 import com.singularity_code.core.ui.util.toDp
 import com.singularity_code.mmdexample.ui.screen.viewmodel.HomeViewModel
 

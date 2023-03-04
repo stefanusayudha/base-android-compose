@@ -1,4 +1,4 @@
-package com.singularity_code.core.common.pattern
+package com.singularity_code.core.common.model
 
 import com.google.gson.annotations.SerializedName
 

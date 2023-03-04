@@ -1,13 +1,13 @@
 /*
  * Copyright (c) 2022. Stefanus Ayudha.
  */
-package com.singularity_code.core.common.pattern.baseactivity
+package com.singularity_code.core.common.pattern.activity
 
-import com.singularity_code.core.common.pattern.BootstrapUseCase
-import com.singularity_code.core.common.pattern.BaseComponentUseCase
+import com.singularity_code.core.common.pattern.Bootstrap
+import com.singularity_code.core.common.pattern.Component
 import kotlinx.coroutines.Job
 
-interface BaseActivityUseCase : BaseComponentUseCase, BootstrapUseCase {
+interface BaseActivity : Component, Bootstrap {
     fun withScope(block: suspend () -> Unit): Job
 
     /**

@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2022. Stefanus Ayudha.
  */
-package com.singularity_code.core.common.pattern.baseactivity
+package com.singularity_code.core.common.pattern.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
-abstract class BaseActivity : ComponentActivity(), BaseActivityUseCase {
+abstract class BaseActivityAbs : ComponentActivity(), BaseActivity {
 
     override val TAG = this.javaClass.simpleName
 

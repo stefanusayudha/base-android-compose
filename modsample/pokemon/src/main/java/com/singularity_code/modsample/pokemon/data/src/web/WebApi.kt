@@ -1,7 +1,7 @@
 package com.singularity_code.modsample.pokemon.data.src.web
 
 import arrow.core.Either
-import com.singularity_code.core.common.pattern.VmError
+import com.singularity_code.core.common.model.VmError
 import com.singularity_code.core.common.util.getOrError
 import com.singularity_code.core.network.GetPokemonByIdQuery
 import com.singularity_code.core.network.GetPokemonListQuery

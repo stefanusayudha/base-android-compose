@@ -3,6 +3,6 @@
  */
 package com.singularity_code.core.common.pattern
 
-interface BaseComponentUseCase {
+interface Component {
     val TAG: String
 }

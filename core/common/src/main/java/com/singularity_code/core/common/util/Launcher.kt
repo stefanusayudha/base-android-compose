@@ -8,16 +8,16 @@ import android.content.Intent
 import androidx.activity.result.ActivityResultCallback
 import androidx.activity.result.ActivityResultLauncher
 import com.singularity_code.core.common.pattern.Payload
-import com.singularity_code.core.common.pattern.BaseLauncher
-import com.singularity_code.core.common.pattern.JsonConvertAble
-import com.singularity_code.core.common.pattern.baseactivity.BaseActivity
+import com.singularity_code.core.common.pattern.activity.LauncherAbs
+import com.singularity_code.core.common.pattern.JsonConvertible
+import com.singularity_code.core.common.pattern.activity.BaseActivityAbs
 import com.singularity_code.core.common.pattern.navigation.Space
 
-fun <P : JsonConvertAble, O> createLauncher(
+fun <P : JsonConvertible, O> createLauncher(
     activity: Class<*>,
     outputType: Class<O>
-): BaseLauncher<P, O> {
-    return object : BaseLauncher<P, O>() {
+): LauncherAbs<P, O> {
+    return object : LauncherAbs<P, O>() {
         override val intent: (c: Context) -> Intent
             get() = { c -> Intent(c, activity) }
         override val outputType: Class<O>
@@ -25,7 +25,7 @@ fun <P : JsonConvertAble, O> createLauncher(
     }
 }
 
-fun <P, O> BaseActivity.createLauncher(
+fun <P, O> BaseActivityAbs.createLauncher(
     space: Space<P, O>,
     callback: ActivityResultCallback<O?>
 ): ActivityResultLauncher<P> {
@@ -39,7 +39,7 @@ fun <P, O> BaseActivity.createLauncher(
  */
 class Launcher<S : Space<P, R>, P : Payload, R>(
     private val space: S,
-    private val activity: BaseActivity
+    private val activity: BaseActivityAbs
 ) {
     /**
      * Override this value for callback action
@@ -64,7 +64,7 @@ class Launcher<S : Space<P, R>, P : Payload, R>(
  * @param R for Result
  * @param space for Space
  */
-fun <S : Space<P, R>, P : Payload, R> BaseActivity.launcher(
+fun <S : Space<P, R>, P : Payload, R> BaseActivityAbs.launcher(
     space: S
 ) = Launcher(
     space = space,

@@ -7,7 +7,7 @@ package com.singularity_code.core.network.util.interceptor
 import com.chuckerteam.chucker.api.ChuckerCollector
 import com.chuckerteam.chucker.api.ChuckerInterceptor
 import com.chuckerteam.chucker.api.RetentionManager
-import com.singularity_code.core.common.pattern.ApplicationContext
+import com.singularity_code.core.common.util.application.ApplicationContext
 
 val chuckerCollector by lazy {
     ChuckerCollector(

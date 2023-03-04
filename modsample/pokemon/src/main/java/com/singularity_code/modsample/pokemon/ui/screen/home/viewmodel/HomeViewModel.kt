@@ -1,12 +1,12 @@
 package com.singularity_code.modsample.pokemon.ui.screen.home.viewmodel
 
-import com.singularity_code.core.common.pattern.viewmodel.BaseViewModel
-import com.singularity_code.core.common.pattern.viewmodel.createStateHolder
+import com.singularity_code.core.common.pattern.viewmodel.BaseViewModelAbs
+import com.singularity_code.core.common.util.createStateHolder
 import com.singularity_code.core.network.GetPokemonListQuery
 import com.singularity_code.modsample.pokemon.data.getPokemonList
 import com.singularity_code.modsample.pokemon.data.payload.GPLPLD
 
-class HomeViewModel : BaseViewModel(), HomeViewModelUseCase {
+class HomeViewModel : BaseViewModelAbs(), HomeViewModelUseCase {
 
     override val pokemonListState =
         createStateHolder<GetPokemonListQuery.Data, GPLPLD> {

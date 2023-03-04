@@ -2,15 +2,15 @@
  * Copyright (c) 2022. Stefanus Ayudha.
  */
 
-package com.singularity_code.core.common.pattern.viewmodel.state
+package com.singularity_code.core.common.util
 
 import androidx.compose.runtime.Composable
-import com.singularity_code.core.common.pattern.VmError
-import com.singularity_code.core.common.pattern.Default
-import com.singularity_code.core.common.pattern.Failed
-import com.singularity_code.core.common.pattern.Loading
-import com.singularity_code.core.common.pattern.Success
-import com.singularity_code.core.common.pattern.viewmodel.BaseViewModel
+import com.singularity_code.core.common.pattern.viewmodel.BaseViewModelAbs
+import com.singularity_code.core.common.model.VmError
+import com.singularity_code.core.common.util.viewmodel.Default
+import com.singularity_code.core.common.util.viewmodel.Failed
+import com.singularity_code.core.common.util.viewmodel.Loading
+import com.singularity_code.core.common.util.viewmodel.Success
 
 /**
  * Be careful this function trigger recomposition.
@@ -18,7 +18,7 @@ import com.singularity_code.core.common.pattern.viewmodel.BaseViewModel
  * This function wil map state value to given response type.
  */
 @Composable
-fun <T, R> BaseViewModel.State<T, *>.mapState(
+fun <T, R> BaseViewModelAbs.State<T, *>.mapState(
     default: () -> R,
     loading: () -> R,
     failed: (e: VmError) -> R,
@@ -38,7 +38,7 @@ fun <T, R> BaseViewModel.State<T, *>.mapState(
  * This function will handle each state by emitting a composable function.
  */
 @Composable
-fun <T> BaseViewModel.State<T, *>.onState(
+fun <T> BaseViewModelAbs.State<T, *>.onState(
     default: @Composable () -> Unit,
     loading: @Composable () -> Unit,
     failed: @Composable (e: VmError) -> Unit,
