@@ -1,11 +1,6 @@
 package com.singularity_code.control.provider.sample.pokemon.model
 
-/**
- * sort for PokemonDataModel
- */
-typealias PDMDL = PokemonDataMdl
-
-data class PokemonDataMdl(
+data class PokemonGem(
     val id: String,
     val name: String
 )
