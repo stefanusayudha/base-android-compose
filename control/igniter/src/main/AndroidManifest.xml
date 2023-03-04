@@ -1,4 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.singularity_code.control.igniter">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.singularity_code.control.igniter">
 
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_singularity_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_singularity_logo_circle"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BaseArchitecture">
+        <activity
+            android:name="com.singularity_code.modsample.splash.ui.activity.SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.BaseArchitecture">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name="com.singularity_code.modsample.todolist.ui.activity.TodoActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.singularity_code.modsample.pokemon.ui.activity.PokemonActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.singularity_code.mmdexample.ui.activity.MMDExampleActivity"
+            android:exported="true" />
+    </application>
 </manifest>
