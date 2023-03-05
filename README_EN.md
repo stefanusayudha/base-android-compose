@@ -102,14 +102,16 @@ For the professionals, this might be consider a taboo. But i do this in purpose 
 
 I removed the domain layers by purpose to maximize the **Pure Function** approach in the Data Layers.
 
-## Pure Function Approach:
+## Pure Function Approach
 1. Every functions in Data Layer should be **Pure Functions** or **Suspended Pure Functions**.
 2. Pure Function should obey these criteria:
->1. Same output for the same input.
->2. No side effects.
->3. No states.
->4. Function duty is only change an input into an output. For example; an Integer into a String, or a Payload into a Data, or Error if the process cannot be fulfilled.
-3. This approach requires the same output for the same given input, means that if we expect a different output, we should provide different input. Example case; if there is changes in the business logic; In the simple way, for every different business logic we shall provides different payload. Or in another way, we don't have such concept "a business process change", rather we consider it as "a new business process".
+>1. Immutable Argument.
+>2. Always return result not reference (not relevant to kotlin/java but good to know it).
+>3. Same output for the same input.
+>4. No side effects.
+>5. No states.
+>6. Function duty is only change an input into an output. For example; an Integer into a String, or a Payload into a Data, or Error if the process cannot be fulfilled.
+4. This approach requires the same output for the same given input, means that if we expect a different output, we should provide different input. Example case; if there is changes in the business logic; In the simple way, for every different business logic we shall provides different payload. Or in another way, we don't have such concept "a business process change", rather we consider it as "a new business process".
  We don't change the business process, but we scale the business process by providing new Pure Function and new Payload for every new business process.
 4. No more Interface Segregation. Imagine a factory object that implements so many UseCases, so it is become very bulky, while all we need is only 1 API. It is so unefficient to build the whole object only to use one API. This is always be a dilema between good practices and memory management. But with Pure Function Approach, there is no more worries. For any problem, all you need is just a (new/existing) Function.
 
