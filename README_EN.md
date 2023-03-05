@@ -2,11 +2,9 @@ This readme comes with another languages :
 - [English (EN)](README_EN.md)
 - [Bahasa Indonesia (ID)](README.md)
 
-# OOPS
-Main feature is in cooking.
-
-- [Modification Safe](https://github.com/stefanusayudha/base-android-compose/issues/40)
-  This feature supposed to make you able to change the project name and modules name, yet still be able to get codebase update safely. And sorry about the deprecation of the version 1. I think i've made a mistake by the versioning and the package naming procedure, so i will continue work on the version 2 for now. I've changed the package name so it is more general as a codebase. This step is required to make the template builder i am currently working on and i promise there won't be any 3rd version very soon.
+PREVIEW ONLY
+Main fitures are still in cooking and testing, such :
+- Modification Safe
 
 Be sure to follow this project to get notification about project updates.
 
