@@ -4,8 +4,6 @@
 
 package com.singularity_code.core.network
 
-import com.singularity_code.core.network.data.dataModule
+import org.koin.core.module.Module
 
-val coreNetworkModules = arrayOf(
-    dataModule
-)
+val coreNetworkModules = arrayOf<Module>()

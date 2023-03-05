@@ -5,7 +5,7 @@ import com.singularity_code.core.common.model.VmError
 import com.singularity_code.core.common.util.getOrError
 import com.singularity_code.core.network.GetPokemonByIdQuery
 import com.singularity_code.core.network.GetPokemonListQuery
-import com.singularity_code.core.network.data.Secured
+import com.singularity_code.core.network.util.Secured
 import com.singularity_code.core.network.util.apolloClient
 import com.singularity_code.modsample.pokemon.data.payload.GPBIPLD
 import com.singularity_code.modsample.pokemon.data.payload.GPLPLD
