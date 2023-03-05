@@ -68,8 +68,6 @@ Sebagaimana namanya, Igniter adalah sebuah module yang bertugas untuk menjadi su
 Anda bisa melihat overview arsitektur pada file [arsitektur-overview.pdf](arsitektur-overview.pdf)
 
 # Internal Module Arsitektur
-Kita mengenal MVVM , Clean Architectur, SOLID, tapi apakah aplikasi front-end perlu se rumit itu? Sebagai frontend developer, saya belum pernah menemukan kasus yang amat kompleks yang sepadan dengan semua effort itu.
-
 Aplikasi front-end hanya terdiri dari 2 hal yakni **UI** dan **Data**.
 
 ## UI
