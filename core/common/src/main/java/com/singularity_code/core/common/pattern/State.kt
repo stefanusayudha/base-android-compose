@@ -12,6 +12,8 @@ import com.singularity_code.core.common.util.viewmodel.RequestState
 interface State<T, P : Payload> {
     @Composable
     fun collectAsState(): State<RequestState<T>>
+    @Composable
+    fun value(): RequestState<T>
     fun requestUpdate(payload: P)
     fun request(payload: P)
     fun resetClear()
