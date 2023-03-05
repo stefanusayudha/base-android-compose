@@ -84,7 +84,7 @@ Buat segalanya stateless jika memungkinkan. Jangan membuat apapun yang memiliki 
 2. Class dengan side effect tidak boleh melakukan "**Cross Responsibility Side Effect**"; Misal, Fragment mengimplementasikan kontrak A dan B, implementasi interface kontrak A melakukan side effect dengan menyimpan data di variable, dan implementasi interface kontrak B menggunakan data yang tersimpan tersebut, ini termasuk dalam **Cross Responsibility Side Effect**. Sangat di sarankan untuk module B, harus memiliki interface untuk menerima data tersebut secara langsung. dan Kontrak A boleh mengirimkan data ke Kontrak B dengan dependensi ke Kontrak B. Atau lebih baik lagi, Kontrak A menyediakan getter untuk data tersebut dan Kontrak B depend ke getter tersebut sesuai dengan **Dependency Inversion** principle.
 
 ## Data
-Disini bagian menariknya. Data layer tidak memerlukan side-effect, tidak perlu memperdulikan lifecycle dan configuration changes (rotasi, dark mode, dll). Module ini sangat sederhana, jadi kenapa kita tidak membuatnya menjadi sederhana?
+Disini bagian menariknya. Data layer tidak memerlukan side-effect, tidak perlu memperdulikan lifecycle dan configuration changes (rotasi, dark mode, dll). Module ini sangat sederhana, jadi kita akan membuatnya sederhana.
 
 Dalam contoh dalam project ini. Data module tidak perlu mematuhi SOLID principle. Akan tetapi kita akan memaksimalkan **Functional Pattern** sebisa mungkin. Saya masih menemukan beberapa kesulitan dalam hal support teknologi, dan dokumentasi, akan tetapi prinsib ini sangatlah sederhana sehingga kita bisa mengabaikannya untuk sementara ini.
 1. Data module, tidak boleh memiliki state, dia hanya peduli dengan apa data yang diminta, dan  
