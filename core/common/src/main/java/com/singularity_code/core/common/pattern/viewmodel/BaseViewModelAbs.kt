@@ -60,7 +60,7 @@ abstract class BaseViewModelAbs : ViewModel(), BaseViewModel {
          * warning: this function trigger recomposition
          */
         @Composable
-        fun value() = collectAsState().value
+        override fun value() = collectAsState().value
 
         override fun requestUpdate(payload: P) {
             state.value = Loading()

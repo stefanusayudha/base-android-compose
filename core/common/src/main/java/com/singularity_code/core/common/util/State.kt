@@ -5,8 +5,8 @@
 package com.singularity_code.core.common.util
 
 import androidx.compose.runtime.Composable
-import com.singularity_code.core.common.pattern.viewmodel.BaseViewModelAbs
 import com.singularity_code.core.common.model.VmError
+import com.singularity_code.core.common.pattern.State
 import com.singularity_code.core.common.util.viewmodel.Default
 import com.singularity_code.core.common.util.viewmodel.Failed
 import com.singularity_code.core.common.util.viewmodel.Loading
@@ -17,8 +17,10 @@ import com.singularity_code.core.common.util.viewmodel.Success
  * Use this if you only need to handle a state one time only.
  * This function wil map state value to given response type.
  */
+
+@Deprecated("Warning: this method arguments is not yet immutable arguments, so becareful when using it.")
 @Composable
-fun <T, R> BaseViewModelAbs.State<T, *>.mapState(
+fun <T, R> State<T, *>.mapState(
     default: () -> R,
     loading: () -> R,
     failed: (e: VmError) -> R,
@@ -38,7 +40,7 @@ fun <T, R> BaseViewModelAbs.State<T, *>.mapState(
  * This function will handle each state by emitting a composable function.
  */
 @Composable
-fun <T> BaseViewModelAbs.State<T, *>.onState(
+fun <T> State<T, *>.onState(
     default: @Composable () -> Unit,
     loading: @Composable () -> Unit,
     failed: @Composable (e: VmError) -> Unit,
