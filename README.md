@@ -102,12 +102,14 @@ Domain layer sengaja dihapuskan untuk memaksimalkan pendekatan **Pure Function**
 ## Pendekatan **Pure Function**
 1. Setiap fungsi pada data layer haruslah sebuah **pure function** atau **suspended pure function**.
 2. Pure function harus memenuhi persyaratan;
->1. Input yang sama harus mengasilkan output yang sama.
->2. Tidak memiliki side effect
->3. Tidak memiliki state.
->4. Fungsi hanya bertugas untuk merubah sebuah input menjadi sebuah output baru. Contohnya merubah *Integer* menjadi *String*, atau merubah *Payload* menjadi *Data*  atau memberikan Error / Exception / Either.Left jika proses tidak berhasil.
-3. Pendekatan ini mengharuskan sebuah input yang sama menghasilkan output yang sama. Artinya jika kita berekspektasi untuk mendapatkan output yang berbeda, maka kita harus memberikan input yang berbeda. Contoh kasus jika terjadi perubahan pada bisnis prosess; Sederhananya, setiap bisnis proses yang berbeda harus memiliki *Payload* yang berbeda juga. Dengan demikian, kita tidak perlu mengkhawatirkan perubahan pada bisnis prosess, atau lebih tepatnya kita tidak memiliki konsep perubahan bisnis proses. Akan tetapi kita menggunakan konsep scalling bisnis proses dengan menghadirkan *Pure Function* baru dan *Payload* baru untuk setiap bisnis proses.
-4. Tidak ada lagi interface segregation. Bayangkan sebuah factory object yang mengimplementasikan berbagai macam UseCase sehingga menjadi begitu bulky. Sedangkan, kita hanya membutuhkan 1 buah api saja dari object tersebut, sungguh tidak efisien membuild object tersebut bukan? Ini selalu menjadi dilema antara praktis yang baik dan memori manajemen. Dengan pendekatan pure function, semua itu tidak ada lagi. Untuk semua masalah, yang anda butuhkan hanyalah sebuah fungsi saja.
+>1. Immutable Argument.
+>2. Fungsi harus selalu return result bukan reference (tidak relevan dengan kotlin / java tapi baik untuk diketahui).
+>3. Input yang sama harus mengasilkan output yang sama.
+>4. Tidak memiliki side effect.
+>5. Tidak memiliki state.
+>6. Fungsi hanya bertugas untuk merubah sebuah input menjadi sebuah output baru. Contohnya merubah *Integer* menjadi *String*, atau merubah *Payload* menjadi *Data*  atau memberikan Error / Exception / Either.Left jika proses tidak berhasil.
+4. Pendekatan ini mengharuskan sebuah input yang sama menghasilkan output yang sama. Artinya jika kita berekspektasi untuk mendapatkan output yang berbeda, maka kita harus memberikan input yang berbeda. Contoh kasus jika terjadi perubahan pada bisnis prosess; Sederhananya, setiap bisnis proses yang berbeda harus memiliki *Payload* yang berbeda juga. Dengan demikian, kita tidak perlu mengkhawatirkan perubahan pada bisnis prosess, atau lebih tepatnya kita tidak memiliki konsep perubahan bisnis proses. Akan tetapi kita menggunakan konsep scalling bisnis proses dengan menghadirkan *Pure Function* baru dan *Payload* baru untuk setiap bisnis proses.
+5. Tidak ada lagi interface segregation. Bayangkan sebuah factory object yang mengimplementasikan berbagai macam UseCase sehingga menjadi begitu bulky. Sedangkan, kita hanya membutuhkan 1 buah api saja dari object tersebut, sungguh tidak efisien membuild object tersebut bukan? Ini selalu menjadi dilema antara praktis yang baik dan memori manajemen. Dengan pendekatan pure function, semua itu tidak ada lagi. Untuk semua masalah, yang anda butuhkan hanyalah sebuah fungsi saja.
 
 # Contributing
 Saya akan sangat senang untuk menerima kontribusi dari siappun, dan saya mebuka proyek ini untuk kontribusi. Akan tetapi untuk sekarang saya masih belum sempat menyiapkan prosedur kontribusi. Oleh karena itu, jika anda berminat untuk melakukan kontribusi, anda dapat menghubungi saya secara langsung. Anda dapat menemukan saya pada section author di bawah.
