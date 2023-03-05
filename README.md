@@ -6,6 +6,8 @@ This readme comes with another languages :
 Fitur utama masih dalam pengembangan dan testing seperti :
 - Modification Safe
 
+Follow project ini untuk mendapatkan update notifikasi.
+
 # THANK YOU
 Sebelumnya saya ingin mengucapkan terimakasih dan apresiasi untuk para kontributor yang sangat luar biasa [Kontributor](CREDITS.md).
 
