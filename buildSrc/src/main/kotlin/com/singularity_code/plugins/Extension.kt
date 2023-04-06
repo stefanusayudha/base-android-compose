@@ -13,7 +13,7 @@ import java.util.*
 /**
  * ## Default Config
  */
-const val MIN_SDK = 32
+const val MIN_SDK = 28
 const val TARGET_SDK = 32
 const val COMPILE_SDK = 33
 
